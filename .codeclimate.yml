@@ -7,3 +7,12 @@ checks:
   method-lines:
     config:
       threshold: 50
+
+---
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+        javascript:
+          mass_threshold: 75
