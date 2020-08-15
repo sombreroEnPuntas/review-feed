@@ -8,7 +8,10 @@ checks:
     config:
       threshold: 50
 
----
+plugins:
+  eslint:
+    enabled: true
+
 engines:
   duplication:
     enabled: true
