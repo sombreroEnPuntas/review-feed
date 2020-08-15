@@ -11,7 +11,7 @@ checks:
 plugins:
   eslint:
     enabled: true
-
+---
 engines:
   duplication:
     enabled: true
