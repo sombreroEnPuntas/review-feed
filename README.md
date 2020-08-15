@@ -1,30 +1,38 @@
+# review-feed
+
+Try it out on [`Vercel`](https://review-feed.vercel.app/)!
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/7f4137dd9f6c4eba544e/maintainability)](https://codeclimate.com/github/sombreroEnPuntas/review-feed/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7f4137dd9f6c4eba544e/test_coverage)](https://codeclimate.com/github/sombreroEnPuntas/review-feed/test_coverage)
+
+Simple web app that allows a user to browse their reviews.
+
+**NOTE: Requirements [here](assignment.pdf)**
+
+## Scripts
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+The following scripts are available:
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
+```js
+yarn lint   // run tsc, eslint & prettier code checks
+yarn dev    // starts dev server locally, with hot reload
+yarn build  // generate PRD bundle
+yarn start  // starts PRD server
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Service
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+There's an API [service](frontend-task.production.cloud.chattermill.xyz) to provide data.  
+Here are the [docs](https://frontend-task.production.cloud.chattermill.xyz/swagger/index.html).
 
-## Learn More
+## CI
 
-To learn more about Next.js, take a look at the following resources:
+- `husky` enforces linting and commit messages locally
+- Merges to `master` branch will trigger a deploy on `Vercel`
+- `codeclimate` prevents accumulating technical debt
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Web app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+There's a web app deployed as a [Vercel app](https://review-feed.vercel.app/), matching latest master.
