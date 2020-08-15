@@ -1,0 +1,9 @@
+version: '2'
+exclude_patterns:
+  - '.next/'
+  - 'node_modules/'
+
+checks:
+  method-lines:
+    config:
+      threshold: 50
