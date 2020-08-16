@@ -26,7 +26,7 @@ yarn start  // starts PRD server
 ## Service
 
 There's an API [service](frontend-task.production.cloud.chattermill.xyz) to provide data.  
-Here are the [docs](https://frontend-task.production.cloud.chattermill.xyz/swagger/index.html).
+Here are the [docs](https://frontend-task.production.cloud.chattermill.xyz/swagger/index.html), and how to [generate the client](src/client/generate.md).
 
 ## CI
 

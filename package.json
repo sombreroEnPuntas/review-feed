@@ -12,7 +12,10 @@
     "release": "standard-version"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md}": "yarn lint"
+    "*.{js,jsx,ts,tsx}": [
+      "yarn eslint --quiet --fix",
+      "bash -c tsc --noEmit"
+    ]
   },
   "husky": {
     "hooks": {
@@ -23,10 +26,12 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.11.1",
     "next": "9.5.2",
+    "portable-fetch": "^3.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "retro-ui": "^0.0.8",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "url": "^0.11.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
