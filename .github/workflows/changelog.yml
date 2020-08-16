@@ -14,6 +14,10 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: '12'
+      - name: Config git
+        run: |
+          git config --global user.email "matiasfornes@gmail.com"
+          git config --global user.name "Mati"
       - name: Create changelog
         run: |
           npm install -g yarn
