@@ -17,6 +17,7 @@ The following scripts are available:
 
 ```js
 yarn lint   // run tsc, eslint & prettier code checks
+yarn test   // run jest tests (unity & integration)
 yarn dev    // starts dev server locally, with hot reload
 yarn build  // generate PRD bundle
 yarn start  // starts PRD server
@@ -30,9 +31,10 @@ Here are the [docs](https://frontend-task.production.cloud.chattermill.xyz/swagg
 ## CI
 
 - `husky` enforces linting and commit messages locally
-- Merges to `master` branch will trigger a deploy on `Vercel`
+- Merges to `master` branch and PRs will trigger deploys on `Vercel` envs
 - `codeclimate` prevents accumulating technical debt
+- a changelog is auto-generated after pushing to master
 
 ## Web app
 
-There's a web app deployed as a [Vercel app](https://review-feed.vercel.app/), matching latest master.
+There's a web app deployed as a [Vercel app](https://review-feed.vercel.app/), matching latest master, and envs are created for new PRs.
