@@ -34,6 +34,7 @@ Here are the [docs](https://frontend-task.production.cloud.chattermill.xyz/swagg
 - Merges to `master` branch and PRs will trigger deploys on `Vercel` envs
 - `codeclimate` prevents accumulating technical debt
 - a changelog is auto-generated after pushing to master
+- PRs get robot reviews: comments and checks 🤖
 
 ## Web app
 
