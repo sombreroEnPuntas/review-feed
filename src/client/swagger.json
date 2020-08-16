@@ -1,0 +1,300 @@
+{
+  "schemes": [],
+  "swagger": "2.0",
+  "info": {
+    "description": "Chattermill API for Frontend coding challenge",
+    "title": "Chattermill API",
+    "version": "1.0"
+  },
+  "host": "frontend-task.production.cloud.chattermill.xyz",
+  "paths": {
+    "/api/reviews": {
+      "get": {
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "description": "Get list of reviews. API supports filtering and pagination.",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "summary": "Get list of reviews",
+        "parameters": [
+          {
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer",
+            "default": 20,
+            "description": "Size of the filtered result set",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "type": "integer",
+            "description": "Offset within filtered result set",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "type": "integer",
+            "description": "Parameter to filter results by theme id",
+            "name": "theme_id",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/model.Review"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/model.APIError"
+            }
+          }
+        }
+      }
+    },
+    "/api/reviews/{id}": {
+      "get": {
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "description": "Get review by id",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "summary": "Get single review",
+        "parameters": [
+          {
+            "type": "integer",
+            "description": "Review id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/model.Review"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/model.APIError"
+            }
+          }
+        }
+      }
+    },
+    "/api/themes": {
+      "get": {
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "description": "Get list of themes. API supports filtering and pagination.",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "summary": "Get list of themes",
+        "parameters": [
+          {
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer",
+            "default": 20,
+            "description": "Size of the filtered result set",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "type": "integer",
+            "description": "Offset within filtered result set",
+            "name": "offset",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/model.Theme"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/model.APIError"
+            }
+          }
+        }
+      }
+    },
+    "/api/themes/{id}": {
+      "get": {
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "description": "Get theme by id",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "summary": "Get single theme",
+        "parameters": [
+          {
+            "type": "integer",
+            "description": "Theme id",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/model.Theme"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/model.APIError"
+            }
+          }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "description": "Used to obtain a JWT token",
+        "consumes": ["application/x-www-form-urlencoded"],
+        "produces": ["application/json"],
+        "summary": "Login API",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "username of a user",
+            "name": "username",
+            "in": "formData",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "password of a user",
+            "name": "password",
+            "in": "formData",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/model.JWTResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/model.APIError"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "model.APIError": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "model.JWTResponse": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer"
+        },
+        "expire": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        }
+      }
+    },
+    "model.Review": {
+      "type": "object",
+      "properties": {
+        "comment": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "themes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/model.ReviewTheme"
+          }
+        }
+      }
+    },
+    "model.ReviewTheme": {
+      "type": "object",
+      "properties": {
+        "sentiment": {
+          "type": "integer",
+          "maximum": 1,
+          "minimum": -1
+        },
+        "theme_id": {
+          "type": "integer"
+        }
+      }
+    },
+    "model.Theme": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "ApiKeyAuth": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  }
+}
