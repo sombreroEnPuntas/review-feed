@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Function Home] snapshot 1`] = `
+<div>
+  <main>
+    <h3>
+      review-feed
+    </h3>
+    <pre
+      class="sc-bdVaJa hSycLH"
+      type="black"
+    >
+      <code
+        class="sc-bwzfXH eiEbqR"
+        type="black"
+      >
+        Read your reviews!
+      </code>
+    </pre>
+  </main>
+</div>
+`;

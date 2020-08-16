@@ -1,11 +1,16 @@
-import React from 'react'
 import { render } from '@testing-library/react'
-import Index from '../pages/index'
+import React from 'react'
+import { ThemeWrapper } from 'retro-ui'
 
-test('renders deploy link', () => {
-  const { getByText } = render(<Index />)
-  const linkElement = getByText(
-    /Instantly deploy your Next\.js site to a public URL with Vercel\./
+import TestedPage from '../pages/index'
+
+test('renders page title', () => {
+  const { getByText } = render(
+    <ThemeWrapper>
+      <TestedPage />
+    </ThemeWrapper>
   )
-  expect(linkElement).toBeInTheDocument()
+  const title = getByText(/review-feed/)
+
+  expect(title).toBeInTheDocument()
 })
