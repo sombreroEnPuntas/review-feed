@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/sombreroEnPuntas/review-feed/compare/v0.1.1...v0.1.2) (2020-08-18)
+
+
+### Features
+
+* chattermil generated client ([224f13b](https://github.com/sombreroEnPuntas/review-feed/commit/224f13b9d10540b4685fba9f1bcf9832765e9530))
+* login ([6bc740c](https://github.com/sombreroEnPuntas/review-feed/commit/6bc740c42c75533a610b7ddb6485777e384958da))
+
+
+### Bug Fixes
+
+* don't run things on release [skip ci] ([ab3bf33](https://github.com/sombreroEnPuntas/review-feed/commit/ab3bf33b513eda43f25ed778124f831ca31e5eb9))
+* versionrc json format ([739df35](https://github.com/sombreroEnPuntas/review-feed/commit/739df352db882c318f09c5da0388e9f60c57509b))
+
 ### 0.1.1 (2020-08-16)
 
 
