@@ -26,5 +26,10 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off', // NextJs page components don't need a React instance!
+    complexity: ['error', 5],
   },
+  ignorePatterns: [
+    // generated code should be ignored:
+    'src/client/**/*.*',
+  ],
 }
