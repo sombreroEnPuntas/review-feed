@@ -1,20 +1,192 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[Function Home] snapshot 1`] = `
+.c2 {
+  background-color: white;
+  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
+  display: block;
+  margin: 0.5em;
+  max-width: 450px;
+  overflow-x: auto;
+  padding: 0.5em;
+  white-space: pre-wrap;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #212529;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 0.65em;
+  font-weight: bold;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: calc(2 * 1.5em);
+}
+
+.c8 {
+  background-color: white;
+  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
+  color: #212529;
+  cursor: pointer;
+  display: block;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 0.65em;
+  font-weight: bold;
+  line-height: calc(2 * 1.5em);
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.c5 {
+  background-color: white;
+  border: none;
+  box-shadow: 0 4px #4d5256, 0 -4px #4d5256, 4px 0 #4d5256, -4px 0 #4d5256;
+  font-family: 'Press Start 2P',monospace;
+  line-height: calc(2 * 1.5em);
+  margin: 4px;
+  outline-color: #212529;
+  padding: 0.5rem 1rem;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #4d525666;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c7 {
+  font-size: 0.5em;
+  line-height: 1.5em;
+  margin: 1em 0;
+  min-height: 3em;
+}
+
+.c6 {
+  margin: 1em 0 0 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 <div>
   <main>
-    <h3>
-      review-feed
-    </h3>
+    <div
+      class="c0"
+    >
+      <h3>
+        review-feed
+      </h3>
+      <div
+        class="c1"
+      >
+        <pre
+          class="c2"
+          type="black"
+        >
+          <code
+            class="c3"
+            type="black"
+          >
+            <form
+              class="c4"
+            >
+              <input
+                aria-label="username"
+                autocomplete="username"
+                class="c5"
+                name="username"
+                placeholder="username"
+                required=""
+                type="text"
+                value=""
+              />
+              <div
+                class="c6"
+              />
+              <input
+                aria-label="password"
+                autocomplete="password"
+                class="c5"
+                name="password"
+                placeholder="password"
+                required=""
+                type="password"
+                value=""
+              />
+              <div
+                class="c7"
+              >
+                
+
+
+              </div>
+              <button
+                class="c8"
+              >
+                Login
+              </button>
+            </form>
+          </code>
+        </pre>
+      </div>
+    </div>
     <pre
-      class="sc-bdVaJa hSycLH"
+      class="c2"
       type="black"
     >
       <code
-        class="sc-bwzfXH eiEbqR"
+        class="c3"
         type="black"
       >
-        Read your reviews!
+        Read reviews!
       </code>
     </pre>
   </main>
