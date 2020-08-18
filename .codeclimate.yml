@@ -2,6 +2,12 @@ version: '2'
 exclude_patterns:
   - '.next/'
   - 'node_modules/'
+  - 'config/'
+  # glue code should be ignored:
+  - 'pages/_app.tsx'
+  - 'pages/_document.tsx'
+  # generated code should also be ignored:
+  - 'src/client/'
 
 checks:
   method-lines:
