@@ -151,7 +151,7 @@ export interface ModelReview {
    * @type {string}
    * @memberof ModelReview
    */
-  createdAt?: string
+  created_at?: string
   /**
    *
    * @type {number}
@@ -183,7 +183,7 @@ export interface ModelReviewTheme {
    * @type {number}
    * @memberof ModelReviewTheme
    */
-  themeId?: number
+  theme_id?: number
 }
 
 /**

@@ -13,3 +13,16 @@ custom.d.ts
 
 5. lint & fix
 6. monkey patch the [url package error](https://github.com/swagger-api/swagger-codegen/issues/6403#issuecomment-455187136)!
+7. type fixing `api.ts`: the responses are _snake_case_
+
+- interface ModelReview
+
+```
+ created_at?: string
+```
+
+- interface ModelReviewTheme
+
+```
+ theme_id?: number
+```
