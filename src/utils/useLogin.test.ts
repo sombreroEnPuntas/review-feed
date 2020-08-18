@@ -35,7 +35,6 @@ describe('useLogin', () => {
     })
 
     expect(result.current.error).toBe(null)
-    expect(result.current.loading).toBe(false)
     expect(result.current.token).toBe(testData.token)
 
     act(() => {
@@ -43,7 +42,6 @@ describe('useLogin', () => {
     })
 
     expect(result.current.error).toBe(null)
-    expect(result.current.loading).toBe(false)
     expect(result.current.token).toBe(undefined)
   })
 
@@ -57,7 +55,6 @@ describe('useLogin', () => {
     })
 
     expect(result.current.error).toBe(`Wut?. SyntaxError or NetworkError`)
-    expect(result.current.loading).toBe(false)
     expect(result.current.token).toBe(undefined)
 
     act(() => {
@@ -65,7 +62,6 @@ describe('useLogin', () => {
     })
 
     expect(result.current.error).toBe(null)
-    expect(result.current.loading).toBe(false)
     expect(result.current.token).toBe(undefined)
   })
 
@@ -81,7 +77,6 @@ describe('useLogin', () => {
     expect(result.current.error).toBe(
       `418: The resulting entity body MAY be short and stout.`
     )
-    expect(result.current.loading).toBe(false)
     expect(result.current.token).toBe(undefined)
 
     act(() => {
@@ -89,7 +84,6 @@ describe('useLogin', () => {
     })
 
     expect(result.current.error).toBe(null)
-    expect(result.current.loading).toBe(false)
     expect(result.current.token).toBe(undefined)
   })
 })

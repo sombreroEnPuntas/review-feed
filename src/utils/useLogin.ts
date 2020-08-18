@@ -1,68 +1,57 @@
 import { useRef, useEffect, useState } from 'react'
-import Cookies from 'universal-cookie'
+import Cookies, { CookieSetOptions } from 'universal-cookie'
 
-import { DefaultApi, ModelAPIError, ModelJWTResponse } from '../client/api'
+import { DefaultApi, ModelJWTResponse } from '../client/api'
+import parseAPIError from './parseAPIError'
 
 const useLogin = () => {
-  const cookies = new Cookies()
+  const cookiesOptions: CookieSetOptions = {
+    path: '/',
+    sameSite: 'strict',
+  }
+  const cookies = useRef<Cookies>()
   const service = useRef<DefaultApi>()
 
   const [error, setError] = useState<string>()
-  const [loading, setLoading] = useState(true)
   const [token, setToken] = useState<string>()
 
-  // instantiate the service once
+  // instantiate the services once
   useEffect(() => {
-    service.current = new DefaultApi()
-    setLoading(false)
+    cookies.current = new Cookies()
+    service.current = new DefaultApi() // un-auth instance 👻
+
+    setToken(cookies.current.get('token'))
 
     return function cleanUp() {
       service.current = undefined
     }
   }, [])
 
-  // set token status after rendering
-  useEffect(() => {
-    setToken(cookies.get('token'))
-  }, [cookies])
-
   const login = async (username: string, password: string) => {
+    let message = null
+
     try {
       const response: ModelJWTResponse = await service.current.loginPost(
         username,
         password
       )
 
-      cookies.set('token', response.token, {
-        path: '/',
-        sameSite: 'strict',
-      })
+      cookies.current.set('token', response.token, cookiesOptions)
       setToken(response.token)
-      setError(null)
     } catch (e) {
-      // `instanceof Response` is not reliable when contexts are different :)
-      // duct-taping is ok tho cuz we just need to unwrap a server response
-      if (e.json) {
-        const errorResponse: ModelAPIError = await e.json()
-        setError(`${errorResponse.code}: ${errorResponse.message}`)
-      } else {
-        setError(`${e.message}`)
-      }
+      message = await parseAPIError(e)
     }
 
-    return { error }
+    setError(message)
   }
 
   const logout = () => {
-    cookies.remove('token', {
-      path: '/',
-      sameSite: 'strict',
-    })
+    cookies.current.remove('token', cookiesOptions)
     setToken(undefined)
     setError(null)
   }
 
-  return { error, loading, login, logout, token }
+  return { error, login, logout, token }
 }
 
 export default useLogin

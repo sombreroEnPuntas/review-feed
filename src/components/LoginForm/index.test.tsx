@@ -13,14 +13,12 @@ jest.mock('../../utils/useLogin')
 // Mock data
 const setUseLoginMock = ({
   error,
-  loading,
   login = jest.fn(),
   logout = jest.fn(),
   token,
 }) =>
   (useLogin as jest.Mock).mockImplementation(() => ({
     error,
-    loading,
     login,
     logout,
     token,
@@ -35,29 +33,9 @@ describe('LoginForm', () => {
     jest.resetAllMocks() // clean .mock
   })
 
-  it(`renders a loading view`, async () => {
-    const testData = {
-      error: null,
-      loading: true,
-      token: undefined,
-    }
-    setUseLoginMock(testData)
-
-    const { container, getByText } = render(
-      <ThemeWrapper>
-        <TestedComponent />
-      </ThemeWrapper>
-    )
-    const loadingText = getByText(/Loading/)
-
-    expect(loadingText).toBeInTheDocument()
-    expect(container).toMatchSnapshot()
-  })
-
   it(`renders a logged-in view`, async () => {
     const testData = {
       error: null,
-      loading: false,
       token: '🦕',
     }
     setUseLoginMock(testData)
@@ -76,7 +54,6 @@ describe('LoginForm', () => {
   it(`renders a login form`, async () => {
     const testData = {
       error: null,
-      loading: false,
       token: undefined,
     }
     setUseLoginMock(testData)
@@ -95,7 +72,6 @@ describe('LoginForm', () => {
   it(`renders a login form with error`, async () => {
     const testData = {
       error: `418: The resulting entity body MAY be short and stout.`,
-      loading: false,
       token: undefined,
     }
     setUseLoginMock(testData)
@@ -115,7 +91,6 @@ describe('LoginForm', () => {
     const login = jest.fn()
     const testData = {
       error: null,
-      loading: false,
       login,
       token: undefined,
     }
@@ -141,7 +116,6 @@ describe('LoginForm', () => {
     const logout = jest.fn()
     const testData = {
       error: null,
-      loading: false,
       logout,
       token: '🦕',
     }

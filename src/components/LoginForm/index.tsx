@@ -2,6 +2,9 @@ import React, { useState, ChangeEvent, FormEvent } from 'react'
 import { Box, Button, Input, Modal } from 'retro-ui'
 import styled from 'styled-components'
 
+import Error from '../Error'
+import Spacer from '../Spacer'
+
 import useLogin from '../../utils/useLogin'
 
 const Form = styled.form`
@@ -9,28 +12,12 @@ const Form = styled.form`
   flex-direction: column;
   align-items: stretch;
 `
-const Error = styled.div`
-  font-size: 0.5em;
-  line-height: 1.5em;
-  margin: 1em 0;
-  min-height: 3em;
-`
-const Spacer = styled.div`
-  margin: 1em 0 0 0;
-`
 
 const LoginForm = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
-  const { error, loading, login, logout, token } = useLogin()
-  if (loading) {
-    return (
-      <Modal>
-        <Box>{`Loading...`}</Box>
-      </Modal>
-    )
-  }
+  const { error, login, logout, token } = useLogin()
 
   const handleLogin = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()

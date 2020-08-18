@@ -1,79 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LoginForm renders a loading view 1`] = `
-.c1 {
-  background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
-  display: block;
-  margin: 0.5em;
-  max-width: 450px;
-  overflow-x: auto;
-  padding: 0.5em;
-  white-space: pre-wrap;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #212529;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: 'Press Start 2P',monospace;
-  font-size: 0.65em;
-  font-weight: bold;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  line-height: calc(2 * 1.5em);
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #4d525666;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  left: 0;
-  overflow: auto;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-<div>
-  <div
-    class="c0"
-  >
-    <pre
-      class="c1"
-      type="black"
-    >
-      <code
-        class="c2"
-        type="black"
-      >
-        Loading...
-      </code>
-    </pre>
-  </div>
-</div>
-`;
-
 exports[`LoginForm renders a logged-in view 1`] = `
 .c0 {
   background-color: white;
@@ -178,6 +104,17 @@ exports[`LoginForm renders a login form 1`] = `
   z-index: 1;
 }
 
+.c6 {
+  font-size: 0.5em;
+  line-height: 1.5em;
+  margin: 1em 0;
+  min-height: 3em;
+}
+
+.c5 {
+  margin: 1em 0 0 0;
+}
+
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -190,17 +127,6 @@ exports[`LoginForm renders a login form 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-}
-
-.c6 {
-  font-size: 0.5em;
-  line-height: 1.5em;
-  margin: 1em 0;
-  min-height: 3em;
-}
-
-.c5 {
-  margin: 1em 0 0 0;
 }
 
 <div>
@@ -340,6 +266,17 @@ exports[`LoginForm renders a login form with error 1`] = `
   z-index: 1;
 }
 
+.c6 {
+  font-size: 0.5em;
+  line-height: 1.5em;
+  margin: 1em 0;
+  min-height: 3em;
+}
+
+.c5 {
+  margin: 1em 0 0 0;
+}
+
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -352,17 +289,6 @@ exports[`LoginForm renders a login form with error 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-}
-
-.c6 {
-  font-size: 0.5em;
-  line-height: 1.5em;
-  margin: 1em 0;
-  min-height: 3em;
-}
-
-.c5 {
-  margin: 1em 0 0 0;
 }
 
 <div>
