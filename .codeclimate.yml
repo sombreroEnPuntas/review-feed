@@ -3,6 +3,8 @@ exclude_patterns:
   - '.next/'
   - 'node_modules/'
   - 'config/'
+  - '__tests__'
+  - '**/*.test.*'
   # glue code should be ignored:
   - 'pages/_app.tsx'
   - 'pages/_document.tsx'
