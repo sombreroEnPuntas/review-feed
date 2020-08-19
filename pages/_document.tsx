@@ -3,7 +3,7 @@ import { ServerStyleSheet } from 'styled-components'
 
 const retroUIFontStyle = {
   fontFamily: "'Press Start 2P', monospace",
-  fontSize: 'calc(50px - 2vw)',
+  fontSize: '1em',
   lineHeight: '1.5em',
 }
 

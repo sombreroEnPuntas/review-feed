@@ -11,18 +11,23 @@ import useLogin from '../../utils/useLogin'
 jest.mock('../../utils/useLogin')
 
 // Mock data
-const setUseLoginMock = ({
-  error,
-  login = jest.fn(),
-  logout = jest.fn(),
-  token,
-}) =>
+const setMock = ({ error, login, logout, token }) =>
   (useLogin as jest.Mock).mockImplementation(() => ({
     error,
     login,
     logout,
     token,
   }))
+
+const stageTest = ({ error, login = jest.fn(), logout = jest.fn(), token }) => {
+  setMock({ error, login, logout, token })
+
+  return render(
+    <ThemeWrapper>
+      <TestedComponent />
+    </ThemeWrapper>
+  )
+}
 
 describe('LoginForm', () => {
   afterEach(() => {
@@ -38,13 +43,8 @@ describe('LoginForm', () => {
       error: null,
       token: '🦕',
     }
-    setUseLoginMock(testData)
+    const { container, getByText } = stageTest(testData)
 
-    const { container, getByText } = render(
-      <ThemeWrapper>
-        <TestedComponent />
-      </ThemeWrapper>
-    )
     const logoutButton = getByText(/Logout/)
 
     expect(logoutButton).toBeInTheDocument()
@@ -56,13 +56,8 @@ describe('LoginForm', () => {
       error: null,
       token: undefined,
     }
-    setUseLoginMock(testData)
+    const { container, getByText } = stageTest(testData)
 
-    const { container, getByText } = render(
-      <ThemeWrapper>
-        <TestedComponent />
-      </ThemeWrapper>
-    )
     const loginButton = getByText(/Login/)
 
     expect(loginButton).toBeInTheDocument()
@@ -74,13 +69,8 @@ describe('LoginForm', () => {
       error: `418: The resulting entity body MAY be short and stout.`,
       token: undefined,
     }
-    setUseLoginMock(testData)
+    const { container, getByText } = stageTest(testData)
 
-    const { container, getByText } = render(
-      <ThemeWrapper>
-        <TestedComponent />
-      </ThemeWrapper>
-    )
     const loginButton = getByText(/Login/)
 
     expect(loginButton).toBeInTheDocument()
@@ -94,13 +84,8 @@ describe('LoginForm', () => {
       login,
       token: undefined,
     }
-    setUseLoginMock(testData)
+    const { getByText, getByLabelText } = stageTest(testData)
 
-    const { getByText, getByLabelText } = render(
-      <ThemeWrapper>
-        <TestedComponent />
-      </ThemeWrapper>
-    )
     const loginButton = getByText(/Login/)
     const usernameInput = getByLabelText(/username/)
     const passwordInput = getByLabelText(/password/)
@@ -119,13 +104,8 @@ describe('LoginForm', () => {
       logout,
       token: '🦕',
     }
-    setUseLoginMock(testData)
+    const { getByText } = stageTest(testData)
 
-    const { getByText } = render(
-      <ThemeWrapper>
-        <TestedComponent />
-      </ThemeWrapper>
-    )
     const logoutButton = getByText(/Logout/)
 
     fireEvent.click(logoutButton)

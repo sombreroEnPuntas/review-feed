@@ -2,18 +2,29 @@ import { renderHook, act } from '@testing-library/react-hooks'
 
 import testedHook from './useLogin'
 
+// Utils
+import TestProvider from './TestProvider'
+
 // Deps
-import { DefaultApi, ModelJWTResponse } from '../client/api'
+import { DefaultApi } from '../client/api'
 import { MockService, MockData } from './mocks'
 
 // Mocks
 jest.mock('../client/api')
 
 // Mock data
-const setDefaultApiMock = (data?: MockData, error?: 'internal' | 'API') =>
+const setMock = ({ data, error }) =>
   (DefaultApi as jest.Mock).mockImplementation(
     () => new MockService(data, error)
   )
+
+const stageTest = ({ data, error }: { data?: MockData; error?: string }) => {
+  setMock({ data, error })
+
+  return renderHook(() => testedHook(), {
+    wrapper: TestProvider,
+  })
+}
 
 describe('useLogin', () => {
   afterEach(() => {
@@ -25,17 +36,17 @@ describe('useLogin', () => {
   })
 
   it(`sets/clears a login token`, async () => {
-    const testData: ModelJWTResponse = { code: 200, token: '🦕', expire: '5' }
-    setDefaultApiMock({ login: testData })
-
-    const { result } = renderHook(() => testedHook())
+    const testData = {
+      data: { login: { code: 200, token: '🦕', expire: '5' } },
+    }
+    const { result } = stageTest(testData)
 
     await act(async () => {
       await result.current.login('Sally', 'Rawr!')
     })
 
     expect(result.current.error).toBe(null)
-    expect(result.current.token).toBe(testData.token)
+    expect(result.current.token).toBe(testData.data.login.token)
 
     act(() => {
       result.current.logout()
@@ -46,9 +57,10 @@ describe('useLogin', () => {
   })
 
   it(`sets/clears a human friendly generic error`, async () => {
-    setDefaultApiMock(undefined, 'internal')
-
-    const { result } = renderHook(() => testedHook())
+    const testData = {
+      error: 'internal',
+    }
+    const { result } = stageTest(testData)
 
     await act(async () => {
       await result.current.login('Sally', 'Rawr!')
@@ -66,9 +78,10 @@ describe('useLogin', () => {
   })
 
   it(`sets/clears a human friendly server error`, async () => {
-    setDefaultApiMock(undefined, 'API')
-
-    const { result } = renderHook(() => testedHook())
+    const testData = {
+      error: 'API',
+    }
+    const { result } = stageTest(testData)
 
     await act(async () => {
       await result.current.login('Sally', 'Rawr!')

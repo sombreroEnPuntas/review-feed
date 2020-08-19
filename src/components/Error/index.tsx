@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Error = styled.div`
-  font-size: 0.5em;
+  font-size: 1em;
   line-height: 1.5em;
   margin: 1em 0;
   min-height: 3em;
