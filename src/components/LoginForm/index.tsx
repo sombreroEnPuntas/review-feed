@@ -11,17 +11,18 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  width: 100%:
 `
 
 const LoginForm = () => {
+  const { error, login, logout, token } = useLogin()
+
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
-  const { error, login, logout, token } = useLogin()
-
-  const handleLogin = async (event: FormEvent<HTMLFormElement>) => {
+  const handleLogin = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    await login(username, password)
+    login(username, password)
   }
 
   const handleLogout = () => {
