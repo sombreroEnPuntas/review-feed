@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Review renders a Review 1`] = `
+.c1 {
+  background-color: white;
+  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
+  display: block;
+  margin: 0.5em;
+  max-width: 450px;
+  overflow-x: auto;
+  padding: 0.5em;
+  white-space: pre-wrap;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #212529;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 0.65em;
+  font-weight: bold;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: calc(2 * 1.5em);
+}
+
+.c0 {
+  background-color: white;
+  font-size: 0.5em;
+  left: 2em;
+  line-height: 1.5em;
+  padding: 0 0.5em;
+  position: relative;
+  top: 1.2em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c3 {
+  display: block;
+  width: 100%;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c5 {
+  background-color: #c9d68f;
+  margin: 0.5em;
+  padding: 0 0.5em;
+  white-space: nowrap;
+}
+
+.c6 {
+  background-color: #E9C46A;
+  margin: 0.5em;
+  padding: 0 0.5em;
+  white-space: nowrap;
+}
+
+.c7 {
+  background-color: #ffd7cf;
+  margin: 0.5em;
+  padding: 0 0.5em;
+  white-space: nowrap;
+}
+
+.c8 {
+  margin: 0 1em;
+}
+
+<div>
+  <article>
+    <div
+      class="c0"
+    >
+      8/20/2020
+    </div>
+    <pre
+      class="c1"
+      type="black"
+    >
+      <code
+        class="c2"
+        type="black"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4"
+          >
+            <span
+              class="c5"
+            >
+              General
+            </span>
+            <span
+              class="c6"
+            >
+              Other
+            </span>
+            <span
+              class="c7"
+            >
+              Unspecific
+            </span>
+          </div>
+          <hr />
+          <div
+            class="c8"
+          >
+            Good, Bad, and Ugly.
+          </div>
+        </div>
+      </code>
+    </pre>
+  </article>
+</div>
+`;

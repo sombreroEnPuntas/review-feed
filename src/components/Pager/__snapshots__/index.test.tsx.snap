@@ -1,0 +1,361 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pager renders a Pager with a message 1`] = `
+.c0 {
+  background-color: #3C3B41;
+  padding: 1em;
+}
+
+.c1 {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  color: #ADACB1;
+  margin: 0 0 0.5em 0;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 0;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #D8D7D9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50px;
+}
+
+.c3:before {
+  background-color: #92cc41;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  width: 20px;
+}
+
+.c4 {
+  background-color: #D8D7D9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  background-color: #c9d68f;
+  box-shadow: 4px 0 #3C3B41,0 -4px #3C3B41,-4px 0 #3C3B41,0 4px #3C3B41;
+  color: #76c442;
+  height: 4em;
+  margin: 1em;
+  overflow: auto;
+  padding: 0.25em;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c8 {
+  background-color: white;
+  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
+  color: #212529;
+  cursor: pointer;
+  display: block;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 0.65em;
+  font-weight: bold;
+  line-height: calc(2 * 1.5em);
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #ADACB1;
+  box-shadow: none;
+}
+
+.c9 {
+  background-color: white;
+  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
+  color: #212529;
+  cursor: pointer;
+  display: block;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 0.65em;
+  font-weight: bold;
+  line-height: calc(2 * 1.5em);
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #E4303E;
+  box-shadow: none;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <h3
+        class="c2"
+      >
+        review-feed
+      </h3>
+      <div
+        class="c3"
+      />
+    </div>
+    <div
+      class="c4"
+    >
+      <div
+        class="c5"
+      >
+        :v
+      </div>
+    </div>
+    <div
+      class="c6"
+    >
+      <div
+        class="c7"
+      >
+        <button
+          class="sc-AxiKw c8"
+        >
+          Filter
+        </button>
+        <button
+          class="sc-AxiKw c8"
+        >
+          Reset
+        </button>
+      </div>
+      <button
+        class="sc-AxiKw c9"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pager renders a Pager with error 1`] = `
+.c0 {
+  background-color: #3C3B41;
+  padding: 1em;
+}
+
+.c1 {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  color: #ADACB1;
+  margin: 0 0 0.5em 0;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 0;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #D8D7D9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50px;
+}
+
+.c3:before {
+  background-color: #e76e55;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  width: 20px;
+}
+
+.c4 {
+  background-color: #D8D7D9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  background-color: #ffd7cf;
+  box-shadow: 4px 0 #3C3B41,0 -4px #3C3B41,-4px 0 #3C3B41,0 4px #3C3B41;
+  color: #ce372b;
+  height: 4em;
+  margin: 1em;
+  overflow: auto;
+  padding: 0.25em;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c8 {
+  background-color: white;
+  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
+  color: #212529;
+  cursor: pointer;
+  display: block;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 0.65em;
+  font-weight: bold;
+  line-height: calc(2 * 1.5em);
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #ADACB1;
+  box-shadow: none;
+}
+
+.c9 {
+  background-color: white;
+  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
+  color: #212529;
+  cursor: pointer;
+  display: block;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 0.65em;
+  font-weight: bold;
+  line-height: calc(2 * 1.5em);
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #E4303E;
+  box-shadow: none;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <h3
+        class="c2"
+      >
+        review-feed
+      </h3>
+      <div
+        class="c3"
+      />
+    </div>
+    <div
+      class="c4"
+    >
+      <div
+        class="c5"
+      >
+        418: The resulting entity body MAY be short and stout.
+      </div>
+    </div>
+    <div
+      class="c6"
+    >
+      <div
+        class="c7"
+      >
+        <button
+          class="sc-AxiKw c8"
+        >
+          Filter
+        </button>
+        <button
+          class="sc-AxiKw c8"
+        >
+          Reset
+        </button>
+      </div>
+      <button
+        class="sc-AxiKw c9"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+`;

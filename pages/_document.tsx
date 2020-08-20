@@ -6,6 +6,10 @@ const retroUIFontStyle = {
   fontSize: '1em',
   lineHeight: '1.5em',
 }
+const bodyStyle = {
+  ...retroUIFontStyle,
+  margin: '0',
+}
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -44,7 +48,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Press+Start+2P"
           />
         </Head>
-        <body style={retroUIFontStyle}>
+        <body style={bodyStyle}>
           <Main />
           <NextScript />
         </body>

@@ -9,6 +9,8 @@ module.exports = {
     '!pages/_document.tsx',
     // generated code should also be ignored:
     '!src/client/**/*.*',
+    // trivial scroll implementation 📜
+    '!src/utils/useScroll.ts',
   ],
   setupFilesAfterEnv: ['<rootDir>/config/jest/setupTests.js'],
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
