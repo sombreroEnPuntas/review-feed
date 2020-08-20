@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/sombreroEnPuntas/review-feed/compare/v0.1.2...v0.1.3) (2020-08-20)
+
+
+### Features
+
+* review feed ([2fb45e7](https://github.com/sombreroEnPuntas/review-feed/commit/2fb45e76d4c0fb33e4d2e37c3ae48e0ae576fa50))
+* **login:** lift login to redux store ([6f76237](https://github.com/sombreroEnPuntas/review-feed/commit/6f7623733549d9d3e08b97f20c841fdc63f9cc9f))
+
+
+### Bug Fixes
+
+* **client:** types were slightly off ([fd1034d](https://github.com/sombreroEnPuntas/review-feed/commit/fd1034dbe8c0b0de86bc12a507d54a820c6d6cee))
+
 ### [0.1.2](https://github.com/sombreroEnPuntas/review-feed/compare/v0.1.1...v0.1.2) (2020-08-18)
 
 
