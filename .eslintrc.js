@@ -23,10 +23,11 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'react/prop-types': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off', // not doing a lib here :)
     'react/react-in-jsx-scope': 'off', // NextJs page components don't need a React instance!
-    complexity: ['error', 5],
+    'react/prop-types': 'off', // Who uses prop types on 2020???
+    'react-hooks/exhaustive-deps': 'off', //sometimes need to ignore deps
+    complexity: ['error', 5], // nice for humans reading code
   },
   ignorePatterns: [
     // generated code should be ignored:

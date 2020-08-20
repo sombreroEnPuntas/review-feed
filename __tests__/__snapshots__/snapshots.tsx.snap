@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[Function Home] snapshot 1`] = `
-.c2 {
+.c12 {
   background-color: white;
   box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   display: block;
@@ -12,7 +12,7 @@ exports[`[Function Home] snapshot 1`] = `
   white-space: pre-wrap;
 }
 
-.c3 {
+.c13 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -32,7 +32,7 @@ exports[`[Function Home] snapshot 1`] = `
   line-height: calc(2 * 1.5em);
 }
 
-.c8 {
+.c18 {
   background-color: white;
   box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
@@ -46,7 +46,7 @@ exports[`[Function Home] snapshot 1`] = `
   padding: 0.5em;
 }
 
-.c5 {
+.c15 {
   background-color: white;
   border: none;
   box-shadow: 0 4px #4d5256, 0 -4px #4d5256, 4px 0 #4d5256, -4px 0 #4d5256;
@@ -57,7 +57,7 @@ exports[`[Function Home] snapshot 1`] = `
   padding: 0.5rem 1rem;
 }
 
-.c1 {
+.c11 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -80,7 +80,22 @@ exports[`[Function Home] snapshot 1`] = `
   z-index: 1;
 }
 
-.c4 {
+.c17 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 1em 0;
+  min-height: 3em;
+}
+
+.c16 {
+  margin: 1em 0 0 0;
+}
+
+.c14 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -88,24 +103,19 @@ exports[`[Function Home] snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  width: 100%;
 }
 
-.c7 {
-  font-size: 0.5em;
-  line-height: 1.5em;
-  margin: 1em 0;
-  min-height: 3em;
+.c1 {
+  background-color: #3C3B41;
+  padding: 1em;
 }
 
-.c6 {
-  margin: 1em 0 0 0;
-}
-
-.c0 {
+.c2 {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -116,79 +126,240 @@ exports[`[Function Home] snapshot 1`] = `
   justify-content: space-between;
 }
 
+.c3 {
+  color: #ADACB1;
+  margin: 0 0 0.5em 0;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 0;
+}
+
+.c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #D8D7D9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50px;
+}
+
+.c4:before {
+  background-color: #92cc41;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  width: 20px;
+}
+
+.c5 {
+  background-color: #D8D7D9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  background-color: #c9d68f;
+  box-shadow: 4px 0 #3C3B41,0 -4px #3C3B41,-4px 0 #3C3B41,0 4px #3C3B41;
+  color: #76c442;
+  height: 4em;
+  margin: 1em;
+  overflow: auto;
+  padding: 0.25em;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c9 {
+  background-color: white;
+  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
+  color: #212529;
+  cursor: pointer;
+  display: block;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 0.65em;
+  font-weight: bold;
+  line-height: calc(2 * 1.5em);
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #ADACB1;
+  box-shadow: none;
+}
+
+.c10 {
+  background-color: white;
+  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
+  color: #212529;
+  cursor: pointer;
+  display: block;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 0.65em;
+  font-weight: bold;
+  line-height: calc(2 * 1.5em);
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #E4303E;
+  box-shadow: none;
+}
+
+.c0 {
+  margin: auto;
+  max-width: 450px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.c19 {
+  margin: auto;
+  max-width: 450px;
+  padding: 0 0.5em;
+  position: relative;
+  z-index: 0;
+}
+
 <div>
   <main>
-    <div
+    <header
       class="c0"
     >
-      <h3>
-        review-feed
-      </h3>
       <div
         class="c1"
       >
-        <pre
+        <div
           class="c2"
-          type="black"
         >
-          <code
+          <h3
             class="c3"
-            type="black"
           >
-            <form
-              class="c4"
+            review-feed
+          </h3>
+          <div
+            class="c4"
+          />
+        </div>
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            Listing all themes.
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div
+            class="c8"
+          >
+            <button
+              class="c9"
             >
-              <input
-                aria-label="username"
-                autocomplete="username"
-                class="c5"
-                name="username"
-                placeholder="username"
-                required=""
-                type="text"
-                value=""
-              />
-              <div
-                class="c6"
-              />
-              <input
-                aria-label="password"
-                autocomplete="password"
-                class="c5"
-                name="password"
-                placeholder="password"
-                required=""
-                type="password"
-                value=""
-              />
-              <div
-                class="c7"
+              Filter
+            </button>
+            <button
+              class="c9"
+            >
+              Reset
+            </button>
+          </div>
+          <button
+            class="c10"
+          >
+            Logout
+          </button>
+          <div
+            class="c11"
+          >
+            <pre
+              class="c12"
+              type="black"
+            >
+              <code
+                class="c13"
+                type="black"
               >
-                
+                <form
+                  class="c14"
+                >
+                  <input
+                    aria-label="username"
+                    autocomplete="username"
+                    class="c15"
+                    name="username"
+                    placeholder="username"
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c16"
+                  />
+                  <input
+                    aria-label="password"
+                    autocomplete="password"
+                    class="c15"
+                    name="password"
+                    placeholder="password"
+                    required=""
+                    type="password"
+                    value=""
+                  />
+                  <div
+                    class="c17"
+                  >
+                    
 
 
-              </div>
-              <button
-                class="c8"
-              >
-                Login
-              </button>
-            </form>
-          </code>
-        </pre>
+                  </div>
+                  <button
+                    class="c18"
+                  >
+                    Login
+                  </button>
+                </form>
+              </code>
+            </pre>
+          </div>
+        </div>
       </div>
-    </div>
-    <pre
-      class="c2"
-      type="black"
-    >
-      <code
-        class="c3"
-        type="black"
-      >
-        Read reviews!
-      </code>
-    </pre>
+    </header>
+    <section
+      class="c19"
+    />
   </main>
 </div>
 `;

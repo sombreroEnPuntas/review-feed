@@ -2,16 +2,17 @@ import React, { useState, ChangeEvent, FormEvent } from 'react'
 import { Box, Button, Input, Modal } from 'retro-ui'
 import styled from 'styled-components'
 
-import Error from '../Error'
+import ErrorMessage from '../ErrorMessage'
+import { AccentCTA } from '../Pager'
 import Spacer from '../Spacer'
 
 import useLogin from '../../utils/useLogin'
 
 const Form = styled.form`
+  align-items: stretch;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  width: 100%:
+  width: 100%;
 `
 
 const LoginForm = () => {
@@ -29,42 +30,47 @@ const LoginForm = () => {
     logout()
   }
 
-  return token ? (
-    <Button onClick={handleLogout}>{'Logout'}</Button>
-  ) : (
-    <Modal>
-      <Box error={!!error}>
-        <Form onSubmit={handleLogin}>
-          <Input
-            aria-label="username"
-            autoComplete="username"
-            name="username"
-            onChange={(event: ChangeEvent<HTMLInputElement>) =>
-              setUsername(event?.target?.value)
-            }
-            placeholder="username"
-            required
-            type="text"
-            value={username}
-          />
-          <Spacer />
-          <Input
-            aria-label="password"
-            autoComplete="password"
-            name="password"
-            onChange={(event: ChangeEvent<HTMLInputElement>) =>
-              setPassword(event?.target?.value)
-            }
-            placeholder="password"
-            required
-            type="password"
-            value={password}
-          />
-          <Error>{error ? error : '\n\n'}</Error>
-          <Button>{`Login`}</Button>
-        </Form>
-      </Box>
-    </Modal>
+  return (
+    <>
+      <AccentCTA onClick={handleLogout}>{'Logout'}</AccentCTA>
+      {!token && (
+        <Modal>
+          <Box error={!!error}>
+            <Form onSubmit={handleLogin}>
+              <Input
+                aria-label="username"
+                autoComplete="username"
+                name="username"
+                onChange={(event: ChangeEvent<HTMLInputElement>) =>
+                  setUsername(event?.target?.value)
+                }
+                placeholder="username"
+                required
+                type="text"
+                value={username}
+              />
+              <Spacer />
+              <Input
+                aria-label="password"
+                autoComplete="password"
+                name="password"
+                onChange={(event: ChangeEvent<HTMLInputElement>) =>
+                  setPassword(event?.target?.value)
+                }
+                placeholder="password"
+                required
+                type="password"
+                value={password}
+              />
+              <ErrorMessage error={!!error}>
+                {error ? error : '\n\n'}
+              </ErrorMessage>
+              <Button>{`Login`}</Button>
+            </Form>
+          </Box>
+        </Modal>
+      )}
+    </>
   )
 }
 
