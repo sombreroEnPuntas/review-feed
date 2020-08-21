@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/sombreroEnPuntas/review-feed/compare/v0.1.3...v0.1.4) (2020-08-21)
+
+
+### Features
+
+* theme filter form ([0e39909](https://github.com/sombreroEnPuntas/review-feed/commit/0e399097761e470f7af9189278257cbf6abd10ed))
+* **get reviews:** lift themes to global data ([5b83439](https://github.com/sombreroEnPuntas/review-feed/commit/5b834398e321167b3c634e03bbe5730f5551e424))
+* **review:** lift themes to global data - view level ([40ade9d](https://github.com/sombreroEnPuntas/review-feed/commit/40ade9d1b2eb503750949930e727e0a81fcb142e))
+* themes and themes filters as global data ([1ac50e6](https://github.com/sombreroEnPuntas/review-feed/commit/1ac50e6d737d89ce02ac5ec525dffbcb70ddf3e5))
+
 ### [0.1.3](https://github.com/sombreroEnPuntas/review-feed/compare/v0.1.2...v0.1.3) (2020-08-20)
 
 
