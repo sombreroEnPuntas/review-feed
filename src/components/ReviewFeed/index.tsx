@@ -1,9 +1,12 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import styled from 'styled-components'
 
 import Pager from '../Pager'
-import Review from '../Review'
+import Review, { getThemeNameById } from '../Review'
 import Loading from '../Loading'
+import { getThemeFilters } from '../../data/filters'
+import { ModelReview } from '../../client/api'
 import useGetReviews from '../../utils/useGetReviews'
 import useScroll from '../../utils/useScroll'
 
@@ -23,6 +26,11 @@ const Section = styled.section`
   z-index: 0;
 `
 
+const filterReviewsByThemes = (review: ModelReview, filters: number[]) =>
+  filters.length === 0
+    ? true
+    : review.themes.some((theme) => filters.includes(theme.theme_id))
+
 const ReviewFeed = () => {
   const { error, loading, reviews, themeList, getReviews } = useGetReviews()
 
@@ -30,9 +38,18 @@ const ReviewFeed = () => {
   /* istanbul ignore next */
   useScroll(() => getReviews(reviews && { offset: reviews.length }))
 
+  const themeFilters: number[] = useSelector(getThemeFilters)
+
   const appStateMessage = loading
     ? 'Loading...'
-    : error || 'Listing all themes.'
+    : error ||
+      `Listing: ${
+        themeFilters.length === 0
+          ? 'all themes'
+          : themeFilters
+              .map((filter) => getThemeNameById(filter, themeList))
+              .join(', ')
+      }.`
 
   return (
     <>
@@ -41,13 +58,11 @@ const ReviewFeed = () => {
         <Pager error={!!error} message={appStateMessage} />
       </Header>
       <Section>
-        {reviews?.map((review) => (
-          <Review
-            key={`review-${review.id}`}
-            review={review}
-            themeList={themeList}
-          />
-        ))}
+        {reviews
+          ?.filter((review) => filterReviewsByThemes(review, themeFilters))
+          ?.map((review) => (
+            <Review key={`review-${review.id}`} review={review} />
+          ))}
       </Section>
     </>
   )
