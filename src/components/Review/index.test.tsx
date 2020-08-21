@@ -1,27 +1,45 @@
 import { render } from '@testing-library/react'
 import React from 'react'
-import { ThemeWrapper } from 'retro-ui'
 
 import TestedComponent, { Props } from '.'
 
+// Deps
+import { useSelector } from 'react-redux'
+
 // Utils
 import { reviewMock, themeListMock } from '../../utils/mocks'
+import TestProvider from '../../utils/TestProvider'
+
 // Mocks
+jest.mock('react-redux', () => ({
+  ...jest.requireActual('react-redux'),
+  useSelector: jest.fn(),
+}))
+
 const getProps = (customProps) => ({
   review: { ...reviewMock },
-  themeList: [...themeListMock],
   ...customProps,
 })
 
 const stageTest = (customProps?: Props) => {
+  useSelector.mockImplementation(() => [...themeListMock])
+
   return render(
-    <ThemeWrapper>
+    <TestProvider>
       <TestedComponent {...getProps(customProps)} />
-    </ThemeWrapper>
+    </TestProvider>
   )
 }
 
 describe('Review', () => {
+  afterEach(() => {
+    // much force-casting, such type-safe, so dark side
+    useSelector.mockClear()
+  })
+  afterAll(() => {
+    jest.resetAllMocks() // clean .mock
+  })
+
   it(`renders a Review`, async () => {
     const { container, getByText } = stageTest()
 
