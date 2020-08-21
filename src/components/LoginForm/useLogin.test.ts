@@ -3,14 +3,14 @@ import { renderHook, act } from '@testing-library/react-hooks'
 import testedHook from './useLogin'
 
 // Utils
-import TestProvider from './TestProvider'
+import TestProvider from '../../utils/TestProvider'
 
 // Deps
-import { DefaultApi } from '../client/api'
-import { MockService, MockData } from './mocks'
+import { DefaultApi } from '../../client/api'
+import { MockService, MockData } from '../../utils/mocks'
 
 // Mocks
-jest.mock('../client/api')
+jest.mock('../../client/api')
 
 // Mock data
 const setMock = ({ data, error }) =>

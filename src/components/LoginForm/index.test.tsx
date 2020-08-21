@@ -5,10 +5,10 @@ import { ThemeWrapper } from 'retro-ui'
 import TestedComponent from '.'
 
 // Deps
-import useLogin from '../../utils/useLogin'
+import useLogin from './useLogin'
 
 // Mocks
-jest.mock('../../utils/useLogin')
+jest.mock('./useLogin')
 
 // Mock data
 const setMock = ({ error, login, logout, token }) =>

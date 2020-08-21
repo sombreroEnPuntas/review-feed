@@ -6,7 +6,7 @@ import TestedComponent from '.'
 // Deps
 import { useSelector } from 'react-redux'
 import { getThemeFilters } from '../../data/filters'
-import useGetReviews from '../../utils/useGetReviews'
+import useGetReviews from './useGetReviews'
 import useScroll from '../../utils/useScroll'
 import LoginForm from '../LoginForm'
 import { AccentCTA } from '../Pager'
@@ -23,7 +23,7 @@ import TestProvider from '../../utils/TestProvider'
 import { getThemes } from '../../data/themes'
 
 // Mocks
-jest.mock('../../utils/useGetReviews')
+jest.mock('./useGetReviews')
 jest.mock('../../utils/useScroll')
 jest.mock('../LoginForm')
 jest.mock('react-redux', () => ({

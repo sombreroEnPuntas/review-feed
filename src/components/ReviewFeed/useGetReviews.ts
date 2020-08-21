@@ -1,11 +1,11 @@
 import { useRef, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { DefaultApi, ModelReview, ModelTheme } from '../client/api'
-import { Configuration } from '../client/configuration'
-import parseAPIError from './parseAPIError'
-import { getToken } from '../data/login'
-import { getThemes, setThemes } from '../data/themes'
+import { DefaultApi, ModelReview, ModelTheme } from '../../client/api'
+import { Configuration } from '../../client/configuration'
+import { getToken } from '../../data/login'
+import { getThemes, setThemes } from '../../data/themes'
+import parseAPIError from '../../utils/parseAPIError'
 
 interface ModelThemeResponse {
   data: ModelTheme[]
@@ -44,6 +44,8 @@ const useGetReviews = () => {
       )
       dispatch(setThemes((response as ModelThemeResponse).data))
     } catch (e) {
+      // indirect tests assert this behavior 🔍
+      /* istanbul ignore next */
       message = await parseAPIError(e, dispatch)
     }
 
@@ -94,8 +96,6 @@ const useGetReviews = () => {
       if (!themes) {
         // initializes all, since it's just text
         await fetchThemes({ limit: 100 })
-      }
-      if (!reviews) {
         await getReviews()
       }
     })()

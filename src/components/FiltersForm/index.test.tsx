@@ -4,51 +4,61 @@ import React from 'react'
 import TestedComponent from '.'
 
 // Deps
-import useFilters from '../../utils/useFilters'
+import { useSelector } from 'react-redux'
+import { getThemeFilters, setThemeFilters } from '../../data/filters'
+import { getThemes } from '../../data/themes'
 
 // Utils
 import { themeListMock } from '../../utils/mocks'
-import { ThemeWrapper } from 'retro-ui'
+import TestProvider from '../../utils/TestProvider'
 
 // Mocks
-jest.mock('../../utils/useFilters')
+jest.mock('react-redux', () => ({
+  ...jest.requireActual('react-redux'),
+  useSelector: jest.fn(),
+}))
+jest.mock('../../data/filters', () => ({
+  ...jest.requireActual('../../data/filters'),
+  setThemeFilters: jest.fn(),
+}))
 
 // Mock data
-const setMock = ({ filter, reset, themes, themeFilters }) =>
-  (useFilters as jest.Mock).mockImplementation(() => ({
-    filter,
-    reset,
-    themes,
-    themeFilters,
-  }))
+const setMock = ({ themes, themeFilters }) => {
+  useSelector.mockImplementation((selector) => {
+    switch (selector) {
+      case getThemeFilters:
+        return themeFilters
+      case getThemes:
+        return themes
 
-const stageTest = ({
-  filter = jest.fn(),
-  reset = jest.fn(),
-  themes = themeListMock,
-  themeFilters = [],
-}) => {
-  setMock({ filter, reset, themes, themeFilters })
+      default:
+        return jest.requireActual('react-redux').useSelector(selector)
+    }
+  })
+  ;(setThemeFilters as any).mockImplementation(() => ({ type: 'mock' }))
+}
+
+const stageTest = () => {
+  setMock({ themes: themeListMock, themeFilters: [] })
 
   return render(
-    <ThemeWrapper>
+    <TestProvider>
       <TestedComponent />
-    </ThemeWrapper>
+    </TestProvider>
   )
 }
 
 describe('FiltersForm', () => {
   afterEach(() => {
-    // much force-casting, such type-safe, so dark side
-    ;(useFilters as jest.Mock).mockClear()
+    useSelector.mockClear()
+    ;(setThemeFilters as any).mockClear()
   })
   afterAll(() => {
     jest.resetAllMocks() // clean .mock
   })
 
   it(`renders main CTAs when not opened`, async () => {
-    const testData = {}
-    const { container, getByText } = stageTest(testData)
+    const { container, getByText } = stageTest()
 
     const filterButton = getByText(/Filter/)
     const resetButton = getByText(/Reset/)
@@ -59,8 +69,7 @@ describe('FiltersForm', () => {
   })
 
   it(`renders a list of filters when opened`, async () => {
-    const testData = {}
-    const { container, getByText } = stageTest(testData)
+    const { container, getByText } = stageTest()
 
     const filterButton = getByText(/Filter/)
     fireEvent.click(filterButton)
@@ -78,9 +87,7 @@ describe('FiltersForm', () => {
   })
 
   it(`reacts to query input`, async () => {
-    const filter = jest.fn()
-    const testData = { filter }
-    const { container, getByText, getByLabelText } = stageTest(testData)
+    const { container, getByText, getByLabelText } = stageTest()
 
     const filterButton = getByText(/Filter/)
     fireEvent.click(filterButton)
@@ -95,9 +102,7 @@ describe('FiltersForm', () => {
   })
 
   it(`reacts to apply CTA`, async () => {
-    const filter = jest.fn()
-    const testData = { filter }
-    const { container, getByText } = stageTest(testData)
+    const { container, getByText } = stageTest()
 
     const filterButton = getByText(/Filter/)
     fireEvent.click(filterButton)
@@ -112,14 +117,12 @@ describe('FiltersForm', () => {
     const applyButton = getByText(/Apply/)
     fireEvent.click(applyButton)
 
-    expect(filter).toHaveBeenCalledWith([1000])
+    expect(setThemeFilters).toHaveBeenCalledWith([1000])
     expect(container).toMatchSnapshot()
   })
 
   it(`reacts to reset CTA`, async () => {
-    const reset = jest.fn()
-    const testData = { reset }
-    const { container, getByText, getAllByText } = stageTest(testData)
+    const { container, getByText, getAllByText } = stageTest()
 
     const filterButton = getByText(/Filter/)
     fireEvent.click(filterButton)
@@ -131,7 +134,8 @@ describe('FiltersForm', () => {
     fireEvent.click(resetButton[0])
     fireEvent.click(resetButton[1])
 
-    expect(reset).toHaveBeenCalledTimes(2)
+    expect(setThemeFilters).toHaveBeenNthCalledWith(1, [])
+    expect(setThemeFilters).toHaveBeenNthCalledWith(2, [])
     expect(container).toMatchSnapshot()
   })
 })
