@@ -1,6 +1,8 @@
+import React from 'react'
 import { Button } from 'retro-ui'
 import styled from 'styled-components'
 
+import FiltersForm from '../FiltersForm'
 import LoginForm from '../LoginForm'
 
 const pagerColors = {
@@ -74,7 +76,7 @@ const Actions = styled.div`
 const ActionsGroup = styled.div`
   display: flex;
 `
-const MainCTA = styled(Button)`
+export const MainCTA = styled(Button)`
   background-color: ${pagerColors.main};
   box-shadow: none;
 `
@@ -98,8 +100,7 @@ const Pager = ({ error, message }: Props) => (
     </ScreenContainer>
     <Actions>
       <ActionsGroup>
-        <MainCTA>{'Filter'}</MainCTA>
-        <MainCTA>{'Reset'}</MainCTA>
+        <FiltersForm />
       </ActionsGroup>
       <LoginForm />
     </Actions>

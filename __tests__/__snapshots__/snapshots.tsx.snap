@@ -80,15 +80,15 @@ exports[`[Function Home] snapshot 1`] = `
   z-index: 1;
 }
 
+.c16 {
+  margin: 1em 0 0 0;
+}
+
 .c17 {
   font-size: 1em;
   line-height: 1.5em;
   margin: 1em 0;
   min-height: 3em;
-}
-
-.c16 {
-  margin: 1em 0 0 0;
 }
 
 .c14 {
@@ -276,7 +276,7 @@ exports[`[Function Home] snapshot 1`] = `
           <div
             class="c6"
           >
-            Listing all themes.
+            Listing: all themes.
           </div>
         </div>
         <div

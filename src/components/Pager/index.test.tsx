@@ -1,8 +1,10 @@
 import { render } from '@testing-library/react'
 import React from 'react'
-import { ThemeWrapper } from 'retro-ui'
 
 import TestedComponent, { Props } from '.'
+
+// Utils
+import TestProvider from '../../utils/TestProvider'
 
 // Deps
 import LoginForm from '../LoginForm'
@@ -26,9 +28,9 @@ const stageTest = (customProps?: Props) => {
   setMock()
 
   return render(
-    <ThemeWrapper>
+    <TestProvider>
       <TestedComponent {...getProps(customProps)} />
-    </ThemeWrapper>
+    </TestProvider>
   )
 }
 

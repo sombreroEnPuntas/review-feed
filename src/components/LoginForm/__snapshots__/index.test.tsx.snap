@@ -113,6 +113,10 @@ exports[`LoginForm renders a login form 1`] = `
   min-height: 3em;
 }
 
+.c6 {
+  margin: 1em 0 0 0;
+}
+
 .c0 {
   background-color: white;
   box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
@@ -127,10 +131,6 @@ exports[`LoginForm renders a login form 1`] = `
   padding: 0.5em;
   background-color: #E4303E;
   box-shadow: none;
-}
-
-.c6 {
-  margin: 1em 0 0 0;
 }
 
 .c4 {
@@ -299,6 +299,10 @@ exports[`LoginForm renders a login form with error 1`] = `
   min-height: 3em;
 }
 
+.c6 {
+  margin: 1em 0 0 0;
+}
+
 .c0 {
   background-color: white;
   box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
@@ -313,10 +317,6 @@ exports[`LoginForm renders a login form with error 1`] = `
   padding: 0.5em;
   background-color: #E4303E;
   box-shadow: none;
-}
-
-.c6 {
-  margin: 1em 0 0 0;
 }
 
 .c4 {

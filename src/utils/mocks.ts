@@ -73,6 +73,24 @@ export const reviewMock = {
     { theme_id: 1002, sentiment: -1 },
   ],
 }
+export const generalReviewMock = {
+  id: 11111111,
+  created_at: '2020-08-21T11:54:52Z',
+  comment: 'Generally good.',
+  themes: [{ theme_id: 1000, sentiment: 1 }],
+}
+export const otherReviewMock = {
+  id: 22222222,
+  created_at: '2020-08-22T11:54:52Z',
+  comment: 'Otherly good.',
+  themes: [{ theme_id: 1001, sentiment: 1 }],
+}
+export const unspecificReviewMock = {
+  id: 33333333,
+  created_at: '2020-08-23T11:54:52Z',
+  comment: 'Unspecifically good.',
+  themes: [{ theme_id: 1002, sentiment: 1 }],
+}
 
 export const themeListMock = [
   { id: 1000, name: 'General' },
