@@ -1,10 +1,14 @@
 import { combineReducers, Action } from 'redux'
 import { configureStore, ThunkAction } from '@reduxjs/toolkit'
 
-import loginReducer from './login'
+import filters from './filters'
+import login from './login'
+import themes from './themes'
 
 const reducer = combineReducers({
-  login: loginReducer,
+  filters,
+  login,
+  themes,
 })
 
 const store = configureStore({
