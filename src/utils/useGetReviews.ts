@@ -5,6 +5,7 @@ import { DefaultApi, ModelReview, ModelTheme } from '../client/api'
 import { Configuration } from '../client/configuration'
 import parseAPIError from './parseAPIError'
 import { getToken } from '../data/login'
+import { getThemes, setThemes } from '../data/themes'
 
 interface ModelThemeResponse {
   data: ModelTheme[]
@@ -19,13 +20,13 @@ const useGetReviews = () => {
 
   const dispatch = useDispatch()
   const token: string = useSelector(getToken)
+  const themes: ModelTheme[] = useSelector(getThemes)
 
   const [error, setError] = useState<string>()
   const [loading, setLoading] = useState(false)
   const [reviews, setReviews] = useState<ModelReview[]>()
-  const [themes, setThemes] = useState<ModelTheme[]>()
 
-  const getThemes = async ({
+  const fetchThemes = async ({
     limit,
     offset,
   }: {
@@ -41,7 +42,7 @@ const useGetReviews = () => {
         limit,
         offset
       )
-      setThemes((response as ModelThemeResponse).data)
+      dispatch(setThemes((response as ModelThemeResponse).data))
     } catch (e) {
       message = await parseAPIError(e, dispatch)
     }
@@ -92,7 +93,7 @@ const useGetReviews = () => {
 
       if (!themes) {
         // initializes all, since it's just text
-        await getThemes({ limit: 100 })
+        await fetchThemes({ limit: 100 })
       }
       if (!reviews) {
         await getReviews()
