@@ -138,7 +138,8 @@ describe('useGetReviews', () => {
       await result.current.dispatch(setToken('Sally', 'Rawr!'))
     })
 
-    expect(result.current.token).toBe(undefined)
+    expect(result.current.error).toBe(`401: You shall not pass!`)
     expect(result.current.loading).toBe(false)
+    expect(result.current.token).toBe(undefined)
   })
 })
