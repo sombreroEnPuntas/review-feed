@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { MainCTA } from '../Pager'
 import Spacer from '../Spacer'
 
-import useFilters from '../../utils/useFilters'
+import useFilters from './useFilters'
 
 const Form = styled.form`
   display: flex;

@@ -3,16 +3,21 @@ import { renderHook, act } from '@testing-library/react-hooks'
 import testedHook from './useGetReviews'
 
 // Utils
-import TestProvider from './TestProvider'
-import { MockService, MockData, reviewMock, themeListMock } from './mocks'
+import TestProvider from '../../utils/TestProvider'
+import {
+  MockService,
+  MockData,
+  reviewMock,
+  themeListMock,
+} from '../../utils/mocks'
 
 // Deps
-import { DefaultApi } from '../client/api'
-import { getToken, setToken } from '../data/login'
+import { DefaultApi } from '../../client/api'
+import { getToken, setToken } from '../../data/login'
 import { useDispatch, useSelector } from 'react-redux'
 
 // Mocks
-jest.mock('../client/api')
+jest.mock('../../client/api')
 
 // Mock data
 const setMock = ({ data, error }: { data?: MockData; error?: any }) =>
@@ -135,7 +140,7 @@ describe('useGetReviews', () => {
     expect(result.current.token).toBe('🦕')
 
     await act(async () => {
-      await result.current.dispatch(setToken('Sally', 'Rawr!'))
+      await result.current.getReviews()
     })
 
     expect(result.current.error).toBe(`401: You shall not pass!`)

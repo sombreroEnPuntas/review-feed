@@ -6,7 +6,7 @@ import ErrorMessage from '../ErrorMessage'
 import { AccentCTA } from '../Pager'
 import Spacer from '../Spacer'
 
-import useLogin from '../../utils/useLogin'
+import useLogin from './useLogin'
 
 const Form = styled.form`
   align-items: stretch;

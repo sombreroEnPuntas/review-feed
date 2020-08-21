@@ -7,7 +7,7 @@ import Review, { getThemeNameById } from '../Review'
 import Loading from '../Loading'
 import { getThemeFilters } from '../../data/filters'
 import { ModelReview } from '../../client/api'
-import useGetReviews from '../../utils/useGetReviews'
+import useGetReviews from './useGetReviews'
 import useScroll from '../../utils/useScroll'
 
 const Header = styled.header`

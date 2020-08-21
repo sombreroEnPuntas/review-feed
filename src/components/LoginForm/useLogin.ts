@@ -1,12 +1,13 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+
 import {
   clearToken,
   getError,
   getToken,
   initialToken,
   setToken,
-} from '../data/login'
+} from '../../data/login'
 
 const useLogin = () => {
   const dispatch = useDispatch()
