@@ -1,13 +1,13 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import styled from 'styled-components'
+import { Modal } from 'retro-ui'
 
+import useGetReviews from './useGetReviews'
 import Pager from '../Pager'
 import Review, { getThemeNameById } from '../Review'
-import Loading from '../Loading'
 import { getThemeFilters } from '../../data/filters'
 import { ModelReview } from '../../client/api'
-import useGetReviews from './useGetReviews'
 import useScroll from '../../utils/useScroll'
 
 const Header = styled.header`
@@ -53,7 +53,7 @@ const ReviewFeed = () => {
 
   return (
     <>
-      {loading && <Loading />}
+      {loading && <Modal />}
       <Header>
         <Pager error={!!error} message={appStateMessage} />
       </Header>
