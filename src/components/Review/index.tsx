@@ -42,7 +42,7 @@ const sentimentMap = (n: number, theme) => {
     case -1:
       return theme.colors['error'].background
     default:
-      return `#E9C46A` // Add this to the style guide later ;)
+      return theme.colors['warning'].background
   }
 }
 
@@ -62,7 +62,7 @@ const Review = ({ review: { comment, created_at, id, themes } }: Props) => {
   return (
     <article>
       <TimeStamp>{new Date(created_at).toLocaleDateString()}</TimeStamp>
-      <Box>
+      <Box type="black">
         <Container>
           <Sentiments>
             {themes?.map(({ sentiment, theme_id }, index) => (

@@ -3,7 +3,6 @@
 exports[`FiltersForm reacts to apply CTA 1`] = `
 .c0 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -11,8 +10,9 @@ exports[`FiltersForm reacts to apply CTA 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
@@ -34,38 +34,20 @@ exports[`FiltersForm reacts to apply CTA 1`] = `
 exports[`FiltersForm reacts to query input 1`] = `
 .c2 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
-  display: block;
-  margin: 0.5em;
-  max-width: 450px;
-  overflow-x: auto;
-  padding: 0.5em;
-  white-space: pre-wrap;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: #212529;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'Press Start 2P',monospace;
   font-size: 0.65em;
   font-weight: bold;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   line-height: calc(2 * 1.5em);
+  overflow-x: auto;
+  padding: 0.5rem 1rem;
+  white-space: pre-wrap;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c10 {
+.c9 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -73,19 +55,19 @@ exports[`FiltersForm reacts to query input 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c8 {
-  background-color: white;
+.c7 {
   border: none;
-  box-shadow: 0 4px #4d5256, 0 -4px #4d5256, 4px 0 #4d5256, -4px 0 #4d5256;
   font-family: 'Press Start 2P',monospace;
-  line-height: calc(2 * 1.5em);
-  margin: 4px;
+  line-height: 1.5em;
   outline-color: #212529;
   padding: 0.5rem 1rem;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
 .c1 {
@@ -111,13 +93,12 @@ exports[`FiltersForm reacts to query input 1`] = `
   z-index: 1;
 }
 
-.c7 {
+.c6 {
   margin: 1em 0 0 0;
 }
 
 .c0 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -125,13 +106,14 @@ exports[`FiltersForm reacts to query input 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -142,7 +124,7 @@ exports[`FiltersForm reacts to query input 1`] = `
   width: 100%;
 }
 
-.c5 {
+.c4 {
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
   align-content: flex-start;
@@ -157,15 +139,15 @@ exports[`FiltersForm reacts to query input 1`] = `
   overflow: auto;
 }
 
-.c6 {
+.c5 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256,0 -4px #4d5256,-4px 0 #4d5256,0 4px #4d5256;
   cursor: pointer;
-  margin: 5px;
   padding: 0 1px;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c9 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -190,69 +172,59 @@ exports[`FiltersForm reacts to query input 1`] = `
   <div
     class="c1"
   >
-    <pre
+    <div
       class="c2"
       type="black"
     >
-      <code
+      <form
         class="c3"
-        type="black"
       >
-        <form
-          class="c4"
+        <div
+          class="c2"
+          type="black"
         >
-          <pre
-            class="c2"
-            type="black"
+          <div
+            class="c4"
           >
-            <code
-              class="c3"
-              type="black"
+            <div
+              class="c5"
             >
-              <div
-                class="c5"
-              >
-                <div
-                  class="c6"
-                >
-                  General
-                </div>
-              </div>
-            </code>
-          </pre>
-          <div
-            class="c7"
-          />
-          <input
-            aria-label="query"
-            class="c8"
-            name="query"
-            placeholder="find theme..."
-            type="text"
-            value="gene"
-          />
-          <div
-            class="c7"
-          />
-          <div
-            class="c9"
-          >
-            <button
-              class="c10"
-              type="submit"
-            >
-              Apply
-            </button>
-            <button
-              class="c10"
-              type="button"
-            >
-              Reset
-            </button>
+              General
+            </div>
           </div>
-        </form>
-      </code>
-    </pre>
+        </div>
+        <div
+          class="c6"
+        />
+        <input
+          aria-label="query"
+          class="c7"
+          name="query"
+          placeholder="find theme..."
+          type="text"
+          value="gene"
+        />
+        <div
+          class="c6"
+        />
+        <div
+          class="c8"
+        >
+          <button
+            class="c9"
+            type="submit"
+          >
+            Apply
+          </button>
+          <button
+            class="c9"
+            type="button"
+          >
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 `;
@@ -260,38 +232,20 @@ exports[`FiltersForm reacts to query input 1`] = `
 exports[`FiltersForm reacts to reset CTA 1`] = `
 .c2 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
-  display: block;
-  margin: 0.5em;
-  max-width: 450px;
-  overflow-x: auto;
-  padding: 0.5em;
-  white-space: pre-wrap;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: #212529;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'Press Start 2P',monospace;
   font-size: 0.65em;
   font-weight: bold;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   line-height: calc(2 * 1.5em);
+  overflow-x: auto;
+  padding: 0.5rem 1rem;
+  white-space: pre-wrap;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c10 {
+.c9 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -299,19 +253,19 @@ exports[`FiltersForm reacts to reset CTA 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c8 {
-  background-color: white;
+.c7 {
   border: none;
-  box-shadow: 0 4px #4d5256, 0 -4px #4d5256, 4px 0 #4d5256, -4px 0 #4d5256;
   font-family: 'Press Start 2P',monospace;
-  line-height: calc(2 * 1.5em);
-  margin: 4px;
+  line-height: 1.5em;
   outline-color: #212529;
   padding: 0.5rem 1rem;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
 .c1 {
@@ -337,13 +291,12 @@ exports[`FiltersForm reacts to reset CTA 1`] = `
   z-index: 1;
 }
 
-.c7 {
+.c6 {
   margin: 1em 0 0 0;
 }
 
 .c0 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -351,13 +304,14 @@ exports[`FiltersForm reacts to reset CTA 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -368,7 +322,7 @@ exports[`FiltersForm reacts to reset CTA 1`] = `
   width: 100%;
 }
 
-.c5 {
+.c4 {
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
   align-content: flex-start;
@@ -383,15 +337,15 @@ exports[`FiltersForm reacts to reset CTA 1`] = `
   overflow: auto;
 }
 
-.c6 {
+.c5 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256,0 -4px #4d5256,-4px 0 #4d5256,0 4px #4d5256;
   cursor: pointer;
-  margin: 5px;
   padding: 0 1px;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c9 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -416,79 +370,69 @@ exports[`FiltersForm reacts to reset CTA 1`] = `
   <div
     class="c1"
   >
-    <pre
+    <div
       class="c2"
       type="black"
     >
-      <code
+      <form
         class="c3"
-        type="black"
       >
-        <form
-          class="c4"
+        <div
+          class="c2"
+          type="black"
         >
-          <pre
-            class="c2"
-            type="black"
+          <div
+            class="c4"
           >
-            <code
-              class="c3"
-              type="black"
+            <div
+              class="c5"
             >
-              <div
-                class="c5"
-              >
-                <div
-                  class="c6"
-                >
-                  General
-                </div>
-                <div
-                  class="c6"
-                >
-                  Other
-                </div>
-                <div
-                  class="c6"
-                >
-                  Unspecific
-                </div>
-              </div>
-            </code>
-          </pre>
-          <div
-            class="c7"
-          />
-          <input
-            aria-label="query"
-            class="c8"
-            name="query"
-            placeholder="find theme..."
-            type="text"
-            value=""
-          />
-          <div
-            class="c7"
-          />
-          <div
-            class="c9"
-          >
-            <button
-              class="c10"
-              type="submit"
+              General
+            </div>
+            <div
+              class="c5"
             >
-              Apply
-            </button>
-            <button
-              class="c10"
-              type="button"
+              Other
+            </div>
+            <div
+              class="c5"
             >
-              Reset
-            </button>
+              Unspecific
+            </div>
           </div>
-        </form>
-      </code>
-    </pre>
+        </div>
+        <div
+          class="c6"
+        />
+        <input
+          aria-label="query"
+          class="c7"
+          name="query"
+          placeholder="find theme..."
+          type="text"
+          value=""
+        />
+        <div
+          class="c6"
+        />
+        <div
+          class="c8"
+        >
+          <button
+            class="c9"
+            type="submit"
+          >
+            Apply
+          </button>
+          <button
+            class="c9"
+            type="button"
+          >
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 `;
@@ -496,38 +440,20 @@ exports[`FiltersForm reacts to reset CTA 1`] = `
 exports[`FiltersForm renders a list of filters when opened 1`] = `
 .c2 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
-  display: block;
-  margin: 0.5em;
-  max-width: 450px;
-  overflow-x: auto;
-  padding: 0.5em;
-  white-space: pre-wrap;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: #212529;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'Press Start 2P',monospace;
   font-size: 0.65em;
   font-weight: bold;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   line-height: calc(2 * 1.5em);
+  overflow-x: auto;
+  padding: 0.5rem 1rem;
+  white-space: pre-wrap;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c10 {
+.c9 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -535,19 +461,19 @@ exports[`FiltersForm renders a list of filters when opened 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c8 {
-  background-color: white;
+.c7 {
   border: none;
-  box-shadow: 0 4px #4d5256, 0 -4px #4d5256, 4px 0 #4d5256, -4px 0 #4d5256;
   font-family: 'Press Start 2P',monospace;
-  line-height: calc(2 * 1.5em);
-  margin: 4px;
+  line-height: 1.5em;
   outline-color: #212529;
   padding: 0.5rem 1rem;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
 .c1 {
@@ -573,13 +499,12 @@ exports[`FiltersForm renders a list of filters when opened 1`] = `
   z-index: 1;
 }
 
-.c7 {
+.c6 {
   margin: 1em 0 0 0;
 }
 
 .c0 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -587,13 +512,14 @@ exports[`FiltersForm renders a list of filters when opened 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -604,7 +530,7 @@ exports[`FiltersForm renders a list of filters when opened 1`] = `
   width: 100%;
 }
 
-.c5 {
+.c4 {
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
   align-content: flex-start;
@@ -619,15 +545,15 @@ exports[`FiltersForm renders a list of filters when opened 1`] = `
   overflow: auto;
 }
 
-.c6 {
+.c5 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256,0 -4px #4d5256,-4px 0 #4d5256,0 4px #4d5256;
   cursor: pointer;
-  margin: 5px;
   padding: 0 1px;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c9 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -652,79 +578,69 @@ exports[`FiltersForm renders a list of filters when opened 1`] = `
   <div
     class="c1"
   >
-    <pre
+    <div
       class="c2"
       type="black"
     >
-      <code
+      <form
         class="c3"
-        type="black"
       >
-        <form
-          class="c4"
+        <div
+          class="c2"
+          type="black"
         >
-          <pre
-            class="c2"
-            type="black"
+          <div
+            class="c4"
           >
-            <code
-              class="c3"
-              type="black"
+            <div
+              class="c5"
             >
-              <div
-                class="c5"
-              >
-                <div
-                  class="c6"
-                >
-                  General
-                </div>
-                <div
-                  class="c6"
-                >
-                  Other
-                </div>
-                <div
-                  class="c6"
-                >
-                  Unspecific
-                </div>
-              </div>
-            </code>
-          </pre>
-          <div
-            class="c7"
-          />
-          <input
-            aria-label="query"
-            class="c8"
-            name="query"
-            placeholder="find theme..."
-            type="text"
-            value=""
-          />
-          <div
-            class="c7"
-          />
-          <div
-            class="c9"
-          >
-            <button
-              class="c10"
-              type="submit"
+              General
+            </div>
+            <div
+              class="c5"
             >
-              Apply
-            </button>
-            <button
-              class="c10"
-              type="button"
+              Other
+            </div>
+            <div
+              class="c5"
             >
-              Reset
-            </button>
+              Unspecific
+            </div>
           </div>
-        </form>
-      </code>
-    </pre>
+        </div>
+        <div
+          class="c6"
+        />
+        <input
+          aria-label="query"
+          class="c7"
+          name="query"
+          placeholder="find theme..."
+          type="text"
+          value=""
+        />
+        <div
+          class="c6"
+        />
+        <div
+          class="c8"
+        >
+          <button
+            class="c9"
+            type="submit"
+          >
+            Apply
+          </button>
+          <button
+            class="c9"
+            type="button"
+          >
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 `;
@@ -732,7 +648,6 @@ exports[`FiltersForm renders a list of filters when opened 1`] = `
 exports[`FiltersForm renders main CTAs when not opened 1`] = `
 .c0 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -740,20 +655,21 @@ exports[`FiltersForm renders main CTAs when not opened 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
 
 <div>
   <button
-    class="sc-AxiKw c0"
+    class="sc-AxirZ c0"
   >
     Filter
   </button>
   <button
-    class="sc-AxiKw c0"
+    class="sc-AxirZ c0"
   >
     Reset
   </button>

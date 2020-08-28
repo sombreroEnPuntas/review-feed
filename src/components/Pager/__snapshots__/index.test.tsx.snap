@@ -98,7 +98,6 @@ exports[`Pager renders a Pager with a message 1`] = `
 
 .c8 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -106,15 +105,15 @@ exports[`Pager renders a Pager with a message 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
 
 .c9 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -122,8 +121,9 @@ exports[`Pager renders a Pager with a message 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #E4303E;
   box-shadow: none;
 }
@@ -160,18 +160,18 @@ exports[`Pager renders a Pager with a message 1`] = `
         class="c7"
       >
         <button
-          class="sc-AxiKw c8"
+          class="sc-AxirZ c8"
         >
           Filter
         </button>
         <button
-          class="sc-AxiKw c8"
+          class="sc-AxirZ c8"
         >
           Reset
         </button>
       </div>
       <button
-        class="sc-AxiKw c9"
+        class="sc-AxirZ c9"
       >
         Logout
       </button>
@@ -278,7 +278,6 @@ exports[`Pager renders a Pager with error 1`] = `
 
 .c8 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -286,15 +285,15 @@ exports[`Pager renders a Pager with error 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
 
 .c9 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -302,8 +301,9 @@ exports[`Pager renders a Pager with error 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #E4303E;
   box-shadow: none;
 }
@@ -340,18 +340,18 @@ exports[`Pager renders a Pager with error 1`] = `
         class="c7"
       >
         <button
-          class="sc-AxiKw c8"
+          class="sc-AxirZ c8"
         >
           Filter
         </button>
         <button
-          class="sc-AxiKw c8"
+          class="sc-AxirZ c8"
         >
           Reset
         </button>
       </div>
       <button
-        class="sc-AxiKw c9"
+        class="sc-AxirZ c9"
       >
         Logout
       </button>

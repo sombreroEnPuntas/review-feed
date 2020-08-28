@@ -21,18 +21,12 @@ const Themes = styled.div`
   overflow: auto;
 `
 const Theme = styled.div<{ active: boolean }>`
-  ${({ theme, active }) => `
-    background-color: ${
-      theme.colors.black[active ? 'backgroundAlt' : 'background']
-    };
-    box-shadow: \
-      4px 0 ${theme.colors.black.shadow}, \
-      0 -4px ${theme.colors.black.shadow}, \
-      -4px 0 ${theme.colors.black.shadow}, \
-      0 4px ${theme.colors.black.shadow};
+  ${({ theme: { colors, snippets }, active }) => `
+    background-color: ${colors.black[active ? 'backgroundAlt' : 'background']};
     cursor: pointer;
-    margin: 5px;
     padding: 0 1px;
+
+    ${snippets.boxShadow({ colors, type: 'black' })}
   `}
 `
 
@@ -73,9 +67,9 @@ const FiltersForm = () => {
       <MainCTA onClick={handleReset}>{'Reset'}</MainCTA>
       {visible && (
         <Modal>
-          <Box>
+          <Box type="black">
             <Form onSubmit={handleSubmit}>
-              <Box>
+              <Box type="black">
                 <Themes>
                   {themes
                     .filter(({ name }) => !!name.match(new RegExp(query, 'gi')))
