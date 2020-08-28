@@ -3,33 +3,16 @@
 exports[`ReviewFeed filters a successful feed 1`] = `
 .c13 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
-  display: block;
-  margin: 0.5em;
-  max-width: 450px;
-  overflow-x: auto;
-  padding: 0.5em;
-  white-space: pre-wrap;
-}
-
-.c14 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: #212529;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'Press Start 2P',monospace;
   font-size: 0.65em;
   font-weight: bold;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   line-height: calc(2 * 1.5em);
+  overflow-x: auto;
+  padding: 0.5rem 1rem;
+  white-space: pre-wrap;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
 .c1 {
@@ -129,7 +112,6 @@ exports[`ReviewFeed filters a successful feed 1`] = `
 
 .c9 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -137,15 +119,15 @@ exports[`ReviewFeed filters a successful feed 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
 
 .c10 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -153,8 +135,9 @@ exports[`ReviewFeed filters a successful feed 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #E4303E;
   box-shadow: none;
 }
@@ -172,12 +155,12 @@ exports[`ReviewFeed filters a successful feed 1`] = `
   width: max-content;
 }
 
-.c15 {
+.c14 {
   display: block;
   width: 100%;
 }
 
-.c16 {
+.c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -187,28 +170,28 @@ exports[`ReviewFeed filters a successful feed 1`] = `
   flex-wrap: wrap;
 }
 
-.c17 {
+.c16 {
   background-color: #c9d68f;
   margin: 0.5em;
   padding: 0 0.5em;
   white-space: nowrap;
 }
 
-.c18 {
-  background-color: #E9C46A;
+.c17 {
+  background-color: #FFE5A6;
   margin: 0.5em;
   padding: 0 0.5em;
   white-space: nowrap;
 }
 
-.c19 {
+.c18 {
   background-color: #ffd7cf;
   margin: 0.5em;
   padding: 0 0.5em;
   white-space: nowrap;
 }
 
-.c20 {
+.c19 {
   margin: 0 1em;
 }
 
@@ -264,18 +247,18 @@ exports[`ReviewFeed filters a successful feed 1`] = `
           class="c8"
         >
           <button
-            class="sc-AxiKw c9"
+            class="sc-AxirZ c9"
           >
             Filter
           </button>
           <button
-            class="sc-AxiKw c9"
+            class="sc-AxirZ c9"
           >
             Reset
           </button>
         </div>
         <button
-          class="sc-AxiKw c10"
+          class="sc-AxirZ c10"
         >
           Logout
         </button>
@@ -291,45 +274,40 @@ exports[`ReviewFeed filters a successful feed 1`] = `
       >
         8/20/2020
       </div>
-      <pre
+      <div
         class="c13"
         type="black"
       >
-        <code
+        <div
           class="c14"
-          type="black"
         >
           <div
             class="c15"
           >
-            <div
+            <span
               class="c16"
             >
-              <span
-                class="c17"
-              >
-                General
-              </span>
-              <span
-                class="c18"
-              >
-                Other
-              </span>
-              <span
-                class="c19"
-              >
-                Unspecific
-              </span>
-            </div>
-            <hr />
-            <div
-              class="c20"
+              General
+            </span>
+            <span
+              class="c17"
             >
-              Good, Bad, and Ugly.
-            </div>
+              Other
+            </span>
+            <span
+              class="c18"
+            >
+              Unspecific
+            </span>
           </div>
-        </code>
-      </pre>
+          <hr />
+          <div
+            class="c19"
+          >
+            Good, Bad, and Ugly.
+          </div>
+        </div>
+      </div>
     </article>
     <article>
       <div
@@ -337,35 +315,30 @@ exports[`ReviewFeed filters a successful feed 1`] = `
       >
         8/21/2020
       </div>
-      <pre
+      <div
         class="c13"
         type="black"
       >
-        <code
+        <div
           class="c14"
-          type="black"
         >
           <div
             class="c15"
           >
-            <div
+            <span
               class="c16"
             >
-              <span
-                class="c17"
-              >
-                General
-              </span>
-            </div>
-            <hr />
-            <div
-              class="c20"
-            >
-              Generally good.
-            </div>
+              General
+            </span>
           </div>
-        </code>
-      </pre>
+          <hr />
+          <div
+            class="c19"
+          >
+            Generally good.
+          </div>
+        </div>
+      </div>
     </article>
   </section>
 </div>
@@ -469,7 +442,6 @@ exports[`ReviewFeed renders a failed feed 1`] = `
 
 .c9 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -477,15 +449,15 @@ exports[`ReviewFeed renders a failed feed 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
 
 .c10 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -493,8 +465,9 @@ exports[`ReviewFeed renders a failed feed 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #E4303E;
   box-shadow: none;
 }
@@ -551,18 +524,18 @@ exports[`ReviewFeed renders a failed feed 1`] = `
           class="c8"
         >
           <button
-            class="sc-AxiKw c9"
+            class="sc-AxirZ c9"
           >
             Filter
           </button>
           <button
-            class="sc-AxiKw c9"
+            class="sc-AxirZ c9"
           >
             Reset
           </button>
         </div>
         <button
-          class="sc-AxiKw c10"
+          class="sc-AxirZ c10"
         >
           Logout
         </button>
@@ -696,7 +669,6 @@ exports[`ReviewFeed renders a failed loading feed 1`] = `
 
 .c10 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -704,15 +676,15 @@ exports[`ReviewFeed renders a failed loading feed 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
 
 .c11 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -720,8 +692,9 @@ exports[`ReviewFeed renders a failed loading feed 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #E4303E;
   box-shadow: none;
 }
@@ -781,18 +754,18 @@ exports[`ReviewFeed renders a failed loading feed 1`] = `
           class="c9"
         >
           <button
-            class="sc-AxiKw c10"
+            class="sc-AxirZ c10"
           >
             Filter
           </button>
           <button
-            class="sc-AxiKw c10"
+            class="sc-AxirZ c10"
           >
             Reset
           </button>
         </div>
         <button
-          class="sc-AxiKw c11"
+          class="sc-AxirZ c11"
         >
           Logout
         </button>
@@ -926,7 +899,6 @@ exports[`ReviewFeed renders a loading feed 1`] = `
 
 .c10 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -934,15 +906,15 @@ exports[`ReviewFeed renders a loading feed 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
 
 .c11 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -950,8 +922,9 @@ exports[`ReviewFeed renders a loading feed 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #E4303E;
   box-shadow: none;
 }
@@ -1011,18 +984,18 @@ exports[`ReviewFeed renders a loading feed 1`] = `
           class="c9"
         >
           <button
-            class="sc-AxiKw c10"
+            class="sc-AxirZ c10"
           >
             Filter
           </button>
           <button
-            class="sc-AxiKw c10"
+            class="sc-AxirZ c10"
           >
             Reset
           </button>
         </div>
         <button
-          class="sc-AxiKw c11"
+          class="sc-AxirZ c11"
         >
           Logout
         </button>
@@ -1038,33 +1011,16 @@ exports[`ReviewFeed renders a loading feed 1`] = `
 exports[`ReviewFeed renders a successful feed 1`] = `
 .c13 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
-  display: block;
-  margin: 0.5em;
-  max-width: 450px;
-  overflow-x: auto;
-  padding: 0.5em;
-  white-space: pre-wrap;
-}
-
-.c14 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: #212529;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'Press Start 2P',monospace;
   font-size: 0.65em;
   font-weight: bold;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   line-height: calc(2 * 1.5em);
+  overflow-x: auto;
+  padding: 0.5rem 1rem;
+  white-space: pre-wrap;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
 .c1 {
@@ -1164,7 +1120,6 @@ exports[`ReviewFeed renders a successful feed 1`] = `
 
 .c9 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -1172,15 +1127,15 @@ exports[`ReviewFeed renders a successful feed 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
 
 .c10 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -1188,8 +1143,9 @@ exports[`ReviewFeed renders a successful feed 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #E4303E;
   box-shadow: none;
 }
@@ -1207,12 +1163,12 @@ exports[`ReviewFeed renders a successful feed 1`] = `
   width: max-content;
 }
 
-.c15 {
+.c14 {
   display: block;
   width: 100%;
 }
 
-.c16 {
+.c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1222,28 +1178,28 @@ exports[`ReviewFeed renders a successful feed 1`] = `
   flex-wrap: wrap;
 }
 
-.c17 {
+.c16 {
   background-color: #c9d68f;
   margin: 0.5em;
   padding: 0 0.5em;
   white-space: nowrap;
 }
 
-.c18 {
-  background-color: #E9C46A;
+.c17 {
+  background-color: #FFE5A6;
   margin: 0.5em;
   padding: 0 0.5em;
   white-space: nowrap;
 }
 
-.c19 {
+.c18 {
   background-color: #ffd7cf;
   margin: 0.5em;
   padding: 0 0.5em;
   white-space: nowrap;
 }
 
-.c20 {
+.c19 {
   margin: 0 1em;
 }
 
@@ -1299,18 +1255,18 @@ exports[`ReviewFeed renders a successful feed 1`] = `
           class="c8"
         >
           <button
-            class="sc-AxiKw c9"
+            class="sc-AxirZ c9"
           >
             Filter
           </button>
           <button
-            class="sc-AxiKw c9"
+            class="sc-AxirZ c9"
           >
             Reset
           </button>
         </div>
         <button
-          class="sc-AxiKw c10"
+          class="sc-AxirZ c10"
         >
           Logout
         </button>
@@ -1326,45 +1282,40 @@ exports[`ReviewFeed renders a successful feed 1`] = `
       >
         8/20/2020
       </div>
-      <pre
+      <div
         class="c13"
         type="black"
       >
-        <code
+        <div
           class="c14"
-          type="black"
         >
           <div
             class="c15"
           >
-            <div
+            <span
               class="c16"
             >
-              <span
-                class="c17"
-              >
-                General
-              </span>
-              <span
-                class="c18"
-              >
-                Other
-              </span>
-              <span
-                class="c19"
-              >
-                Unspecific
-              </span>
-            </div>
-            <hr />
-            <div
-              class="c20"
+              General
+            </span>
+            <span
+              class="c17"
             >
-              Good, Bad, and Ugly.
-            </div>
+              Other
+            </span>
+            <span
+              class="c18"
+            >
+              Unspecific
+            </span>
           </div>
-        </code>
-      </pre>
+          <hr />
+          <div
+            class="c19"
+          >
+            Good, Bad, and Ugly.
+          </div>
+        </div>
+      </div>
     </article>
   </section>
 </div>

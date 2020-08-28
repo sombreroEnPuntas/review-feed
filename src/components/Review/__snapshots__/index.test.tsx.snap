@@ -3,33 +3,16 @@
 exports[`Review renders a Review 1`] = `
 .c1 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
-  display: block;
-  margin: 0.5em;
-  max-width: 450px;
-  overflow-x: auto;
-  padding: 0.5em;
-  white-space: pre-wrap;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: #212529;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'Press Start 2P',monospace;
   font-size: 0.65em;
   font-weight: bold;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   line-height: calc(2 * 1.5em);
+  overflow-x: auto;
+  padding: 0.5rem 1rem;
+  white-space: pre-wrap;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
 .c0 {
@@ -45,12 +28,12 @@ exports[`Review renders a Review 1`] = `
   width: max-content;
 }
 
-.c3 {
+.c2 {
   display: block;
   width: 100%;
 }
 
-.c4 {
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -60,28 +43,28 @@ exports[`Review renders a Review 1`] = `
   flex-wrap: wrap;
 }
 
-.c5 {
+.c4 {
   background-color: #c9d68f;
   margin: 0.5em;
   padding: 0 0.5em;
   white-space: nowrap;
 }
 
-.c6 {
-  background-color: #E9C46A;
+.c5 {
+  background-color: #FFE5A6;
   margin: 0.5em;
   padding: 0 0.5em;
   white-space: nowrap;
 }
 
-.c7 {
+.c6 {
   background-color: #ffd7cf;
   margin: 0.5em;
   padding: 0 0.5em;
   white-space: nowrap;
 }
 
-.c8 {
+.c7 {
   margin: 0 1em;
 }
 
@@ -92,45 +75,40 @@ exports[`Review renders a Review 1`] = `
     >
       8/20/2020
     </div>
-    <pre
+    <div
       class="c1"
       type="black"
     >
-      <code
+      <div
         class="c2"
-        type="black"
       >
         <div
           class="c3"
         >
-          <div
+          <span
             class="c4"
           >
-            <span
-              class="c5"
-            >
-              General
-            </span>
-            <span
-              class="c6"
-            >
-              Other
-            </span>
-            <span
-              class="c7"
-            >
-              Unspecific
-            </span>
-          </div>
-          <hr />
-          <div
-            class="c8"
+            General
+          </span>
+          <span
+            class="c5"
           >
-            Good, Bad, and Ugly.
-          </div>
+            Other
+          </span>
+          <span
+            class="c6"
+          >
+            Unspecific
+          </span>
         </div>
-      </code>
-    </pre>
+        <hr />
+        <div
+          class="c7"
+        >
+          Good, Bad, and Ugly.
+        </div>
+      </div>
+    </div>
   </article>
 </div>
 `;

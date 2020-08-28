@@ -7810,10 +7810,10 @@ ret@~0.1.10:
   resolved "https://registry.yarnpkg.com/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
   integrity sha512-TTlYpa+OL+vMMNG24xSlQGEJ3B/RzEfUlLct7b5G/ytav+wPrplCpVMFuwzXbkecJrb6IYo1iFb0S9v37754mg==
 
-retro-ui@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/retro-ui/-/retro-ui-0.0.9.tgz#1386fda064ce1645c7105e8a4bbfec86260e419c"
-  integrity sha512-4DcDpLkcRN6x/+9YktWxBoM5pLHR5r4wISzUD1ckvC1TYmRVxJVh5fkk07wTzzfb6v56Piism57aB8TYiMMvVQ==
+retro-ui@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/retro-ui/-/retro-ui-0.0.10.tgz#b201fc28cd3a5decd2329fc4bf17133a0c220980"
+  integrity sha512-I4nbrFGnjjEe3duXOIOK5uk0s0heH888dzcsKj3OydOGe/OiS8ZmsCkx3pellw9Cv66HymDGb35SCk8XZPqHTA==
 
 rework-visit@1.0.0:
   version "1.0.0"

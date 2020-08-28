@@ -35,7 +35,7 @@ const LoginForm = () => {
       <AccentCTA onClick={handleLogout}>{'Logout'}</AccentCTA>
       {!token && (
         <Modal>
-          <Box error={!!error}>
+          <Box type={error ? 'error' : 'black'}>
             <Form onSubmit={handleLogin}>
               <Input
                 aria-label="username"
@@ -62,8 +62,8 @@ const LoginForm = () => {
                 type="password"
                 value={password}
               />
-              <ErrorMessage error={!!error}>
-                {error ? error : '\n\n'}
+              <ErrorMessage type={error ? 'error' : 'black'}>
+                {error ? error : ' '}
               </ErrorMessage>
               <Button>{`Login`}</Button>
             </Form>

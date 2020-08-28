@@ -35,7 +35,7 @@
     "react-dom": "16.13.1",
     "react-redux": "^7.2.1",
     "redux": "^4.0.5",
-    "retro-ui": "^0.0.9",
+    "retro-ui": "^0.0.10",
     "styled-components": "^5.1.1",
     "universal-cookie": "^4.0.3",
     "url": "^0.11.0"

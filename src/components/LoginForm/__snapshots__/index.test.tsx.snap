@@ -3,7 +3,6 @@
 exports[`LoginForm renders a logged-in view 1`] = `
 .c0 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -11,15 +10,16 @@ exports[`LoginForm renders a logged-in view 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #E4303E;
   box-shadow: none;
 }
 
 <div>
   <button
-    class="sc-AxiKw c0"
+    class="sc-AxirZ c0"
   >
     Logout
   </button>
@@ -29,38 +29,20 @@ exports[`LoginForm renders a logged-in view 1`] = `
 exports[`LoginForm renders a login form 1`] = `
 .c2 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
-  display: block;
-  margin: 0.5em;
-  max-width: 450px;
-  overflow-x: auto;
-  padding: 0.5em;
-  white-space: pre-wrap;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: #212529;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'Press Start 2P',monospace;
   font-size: 0.65em;
   font-weight: bold;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   line-height: calc(2 * 1.5em);
+  overflow-x: auto;
+  padding: 0.5rem 1rem;
+  white-space: pre-wrap;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c8 {
+.c7 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -68,19 +50,19 @@ exports[`LoginForm renders a login form 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c5 {
-  background-color: white;
+.c4 {
   border: none;
-  box-shadow: 0 4px #4d5256, 0 -4px #4d5256, 4px 0 #4d5256, -4px 0 #4d5256;
   font-family: 'Press Start 2P',monospace;
-  line-height: calc(2 * 1.5em);
-  margin: 4px;
+  line-height: 1.5em;
   outline-color: #212529;
   padding: 0.5rem 1rem;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
 .c1 {
@@ -106,20 +88,22 @@ exports[`LoginForm renders a login form 1`] = `
   z-index: 1;
 }
 
-.c7 {
-  font-size: 1em;
-  line-height: 1.5em;
+.c6 {
+  color: #212529;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 0.65em;
+  font-weight: bold;
+  line-height: calc(2 * 1.5em);
   margin: 1em 0;
   min-height: 3em;
 }
 
-.c6 {
+.c5 {
   margin: 1em 0 0 0;
 }
 
 .c0 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -127,13 +111,14 @@ exports[`LoginForm renders a login form 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #E4303E;
   box-shadow: none;
 }
 
-.c4 {
+.c3 {
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -157,55 +142,49 @@ exports[`LoginForm renders a login form 1`] = `
   <div
     class="c1"
   >
-    <pre
+    <div
       class="c2"
       type="black"
     >
-      <code
+      <form
         class="c3"
-        type="black"
       >
-        <form
+        <input
+          aria-label="username"
+          autocomplete="username"
           class="c4"
+          name="username"
+          placeholder="username"
+          required=""
+          type="text"
+          value=""
+        />
+        <div
+          class="c5"
+        />
+        <input
+          aria-label="password"
+          autocomplete="password"
+          class="c4"
+          name="password"
+          placeholder="password"
+          required=""
+          type="password"
+          value=""
+        />
+        <div
+          class="sc-AxhCb c6"
+          type="black"
         >
-          <input
-            aria-label="username"
-            autocomplete="username"
-            class="c5"
-            name="username"
-            placeholder="username"
-            required=""
-            type="text"
-            value=""
-          />
-          <div
-            class="c6"
-          />
-          <input
-            aria-label="password"
-            autocomplete="password"
-            class="c5"
-            name="password"
-            placeholder="password"
-            required=""
-            type="password"
-            value=""
-          />
-          <div
-            class="c7"
-          >
-            
-
-
-          </div>
-          <button
-            class="c8"
-          >
-            Login
-          </button>
-        </form>
-      </code>
-    </pre>
+           
+        </div>
+        <button
+          class="c7"
+        >
+          Login
+        </button>
+      </form>
+    </div>
   </div>
 </div>
 `;
@@ -213,38 +192,20 @@ exports[`LoginForm renders a login form 1`] = `
 exports[`LoginForm renders a login form with error 1`] = `
 .c2 {
   background-color: #ffd7cf;
-  box-shadow: 4px 0 #e76e55, 0 -4px #e76e55, -4px 0 #e76e55, 0 4px #e76e55;
-  display: block;
-  margin: 0.5em;
-  max-width: 450px;
-  overflow-x: auto;
-  padding: 0.5em;
-  white-space: pre-wrap;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: #ce372b;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'Press Start 2P',monospace;
   font-size: 0.65em;
   font-weight: bold;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   line-height: calc(2 * 1.5em);
+  overflow-x: auto;
+  padding: 0.5rem 1rem;
+  white-space: pre-wrap;
+  box-shadow: 0 4px #e76e55,0 -4px #e76e55,4px 0 #e76e55,-4px 0 #e76e55;
+  margin: 4px;
 }
 
-.c8 {
+.c7 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -252,19 +213,19 @@ exports[`LoginForm renders a login form with error 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c5 {
-  background-color: white;
+.c4 {
   border: none;
-  box-shadow: 0 4px #4d5256, 0 -4px #4d5256, 4px 0 #4d5256, -4px 0 #4d5256;
   font-family: 'Press Start 2P',monospace;
-  line-height: calc(2 * 1.5em);
-  margin: 4px;
+  line-height: 1.5em;
   outline-color: #212529;
   padding: 0.5rem 1rem;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
 .c1 {
@@ -290,22 +251,22 @@ exports[`LoginForm renders a login form with error 1`] = `
   z-index: 1;
 }
 
-.c7 {
-  background-color: #ffd7cf;
+.c6 {
   color: #ce372b;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 0.65em;
+  font-weight: bold;
+  line-height: calc(2 * 1.5em);
   margin: 1em 0;
   min-height: 3em;
 }
 
-.c6 {
+.c5 {
   margin: 1em 0 0 0;
 }
 
 .c0 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -313,13 +274,14 @@ exports[`LoginForm renders a login form with error 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #E4303E;
   box-shadow: none;
 }
 
-.c4 {
+.c3 {
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -343,53 +305,49 @@ exports[`LoginForm renders a login form with error 1`] = `
   <div
     class="c1"
   >
-    <pre
+    <div
       class="c2"
       type="error"
     >
-      <code
+      <form
         class="c3"
-        type="error"
       >
-        <form
+        <input
+          aria-label="username"
+          autocomplete="username"
           class="c4"
+          name="username"
+          placeholder="username"
+          required=""
+          type="text"
+          value=""
+        />
+        <div
+          class="c5"
+        />
+        <input
+          aria-label="password"
+          autocomplete="password"
+          class="c4"
+          name="password"
+          placeholder="password"
+          required=""
+          type="password"
+          value=""
+        />
+        <div
+          class="sc-AxhCb c6"
+          type="error"
         >
-          <input
-            aria-label="username"
-            autocomplete="username"
-            class="c5"
-            name="username"
-            placeholder="username"
-            required=""
-            type="text"
-            value=""
-          />
-          <div
-            class="c6"
-          />
-          <input
-            aria-label="password"
-            autocomplete="password"
-            class="c5"
-            name="password"
-            placeholder="password"
-            required=""
-            type="password"
-            value=""
-          />
-          <div
-            class="c7"
-          >
-            418: The resulting entity body MAY be short and stout.
-          </div>
-          <button
-            class="c8"
-          >
-            Login
-          </button>
-        </form>
-      </code>
-    </pre>
+          418: The resulting entity body MAY be short and stout.
+        </div>
+        <button
+          class="c7"
+        >
+          Login
+        </button>
+      </form>
+    </div>
   </div>
 </div>
 `;

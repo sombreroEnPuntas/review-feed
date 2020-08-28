@@ -3,38 +3,20 @@
 exports[`[Function Home] snapshot 1`] = `
 .c12 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
-  display: block;
-  margin: 0.5em;
-  max-width: 450px;
-  overflow-x: auto;
-  padding: 0.5em;
-  white-space: pre-wrap;
-}
-
-.c13 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: #212529;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'Press Start 2P',monospace;
   font-size: 0.65em;
   font-weight: bold;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   line-height: calc(2 * 1.5em);
+  overflow-x: auto;
+  padding: 0.5rem 1rem;
+  white-space: pre-wrap;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c18 {
+.c17 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -42,19 +24,19 @@ exports[`[Function Home] snapshot 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
-.c15 {
-  background-color: white;
+.c14 {
   border: none;
-  box-shadow: 0 4px #4d5256, 0 -4px #4d5256, 4px 0 #4d5256, -4px 0 #4d5256;
   font-family: 'Press Start 2P',monospace;
-  line-height: calc(2 * 1.5em);
-  margin: 4px;
+  line-height: 1.5em;
   outline-color: #212529;
   padding: 0.5rem 1rem;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
 }
 
 .c11 {
@@ -80,18 +62,21 @@ exports[`[Function Home] snapshot 1`] = `
   z-index: 1;
 }
 
-.c16 {
+.c15 {
   margin: 1em 0 0 0;
 }
 
-.c17 {
-  font-size: 1em;
-  line-height: 1.5em;
+.c16 {
+  color: #212529;
+  font-family: 'Press Start 2P',monospace;
+  font-size: 0.65em;
+  font-weight: bold;
+  line-height: calc(2 * 1.5em);
   margin: 1em 0;
   min-height: 3em;
 }
 
-.c14 {
+.c13 {
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -203,7 +188,6 @@ exports[`[Function Home] snapshot 1`] = `
 
 .c9 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -211,15 +195,15 @@ exports[`[Function Home] snapshot 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #ADACB1;
   box-shadow: none;
 }
 
 .c10 {
   background-color: white;
-  box-shadow: 4px 0 #4d5256, 0 -4px #4d5256, -4px 0 #4d5256, 0 4px #4d5256;
   color: #212529;
   cursor: pointer;
   display: block;
@@ -227,8 +211,9 @@ exports[`[Function Home] snapshot 1`] = `
   font-size: 0.65em;
   font-weight: bold;
   line-height: calc(2 * 1.5em);
-  margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 4px #4d5256,0 -4px #4d5256,4px 0 #4d5256,-4px 0 #4d5256;
+  margin: 4px;
   background-color: #E4303E;
   box-shadow: none;
 }
@@ -242,7 +227,7 @@ exports[`[Function Home] snapshot 1`] = `
   z-index: 1;
 }
 
-.c19 {
+.c18 {
   margin: auto;
   max-width: 450px;
   padding: 0 0.5em;
@@ -304,61 +289,55 @@ exports[`[Function Home] snapshot 1`] = `
           <div
             class="c11"
           >
-            <pre
+            <div
               class="c12"
               type="black"
             >
-              <code
+              <form
                 class="c13"
-                type="black"
               >
-                <form
+                <input
+                  aria-label="username"
+                  autocomplete="username"
                   class="c14"
+                  name="username"
+                  placeholder="username"
+                  required=""
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="c15"
+                />
+                <input
+                  aria-label="password"
+                  autocomplete="password"
+                  class="c14"
+                  name="password"
+                  placeholder="password"
+                  required=""
+                  type="password"
+                  value=""
+                />
+                <div
+                  class="sc-AxhCb c16"
+                  type="black"
                 >
-                  <input
-                    aria-label="username"
-                    autocomplete="username"
-                    class="c15"
-                    name="username"
-                    placeholder="username"
-                    required=""
-                    type="text"
-                    value=""
-                  />
-                  <div
-                    class="c16"
-                  />
-                  <input
-                    aria-label="password"
-                    autocomplete="password"
-                    class="c15"
-                    name="password"
-                    placeholder="password"
-                    required=""
-                    type="password"
-                    value=""
-                  />
-                  <div
-                    class="c17"
-                  >
-                    
-
-
-                  </div>
-                  <button
-                    class="c18"
-                  >
-                    Login
-                  </button>
-                </form>
-              </code>
-            </pre>
+                   
+                </div>
+                <button
+                  class="c17"
+                >
+                  Login
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <section
-      class="c19"
+      class="c18"
     />
   </main>
 </div>
