@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/sombreroEnPuntas/review-feed/compare/v0.1.4...v0.1.5) (2020-08-28)
+
+
+### Features
+
+* bump retro-ui ([1f72384](https://github.com/sombreroEnPuntas/review-feed/commit/1f72384df1921ed7355f11ff4b0c1adf34a60bbb))
+
 ### [0.1.4](https://github.com/sombreroEnPuntas/review-feed/compare/v0.1.3...v0.1.4) (2020-08-21)
 
 
